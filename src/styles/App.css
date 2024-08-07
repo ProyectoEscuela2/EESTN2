@@ -1,0 +1,42 @@
+.inImg{
+    position: absolute;
+    z-index: -100;
+    object-fit: cover;
+}
+.contInicio{
+    position:relative;
+    overflow: hidden;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: var(--color-primario-claro);
+    padding: 200px;
+    background-image: url("https://i.postimg.cc/d1rtVT8b/homeImg.webp");
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: fill;
+    z-index: -100;
+}
+.textInicio h1{
+    font-size: 5rem;
+
+}
+.textInicio p{
+    font-size: 16pt;
+}
+.gradient{
+    background: linear-gradient(black, transparent 80%);
+    width: 100%;
+    z-index: -50;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+}
+.inImgOla{
+    position: absolute;
+    bottom: 0;
+    width: 101%;
+    left: 0;
+}

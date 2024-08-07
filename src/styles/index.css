@@ -1,0 +1,25 @@
+:root{
+
+  --color-primario-claro:#D6D6D6;
+  --color-primario-oscuro:#121212;
+  --color-secundario-brillante:#7BAFD4;
+  --color-secundario-opaco:#213452;
+  --color-secundario-acromatico:#3F3F3F;
+}
+a{
+  text-decoration: none;
+}
+*{
+
+  user-select: none;
+  padding: 0px;
+  margin: 0px;
+
+}
+body {
+  font-family: "Tiro Bangla", serif;
+  font-weight: 400;
+  font-style: normal;
+  overflow-x: hidden;
+  overflow-y: overlay;
+}

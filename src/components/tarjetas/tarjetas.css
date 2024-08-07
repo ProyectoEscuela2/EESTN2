@@ -1,0 +1,91 @@
+@keyframes animacion-tarjeta1 {
+    from{
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+}
+@keyframes animacion-tarjeta3 {
+    from{
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+}
+
+@keyframes animacion-tarjeta2 {
+    from{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+}
+
+
+
+.datos{
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(16, 21, 24, .2);
+    border-radius: 10px;
+    background-color: var(--color-primario-claro);
+    margin: 8px;
+    padding: 2rem;
+    opacity: 16;
+    box-shadow: 2px 16px 40px rgb(16, 21, 24, .2);
+}
+
+.active.id1{
+    animation: animacion-tarjeta1 1s ease forwards;
+    opacity: 0;
+}
+.active.id3{
+    animation: animacion-tarjeta3 1s ease forwards;
+    opacity: 0;
+}
+.active.id2{
+    animation: animacion-tarjeta2 1s ease forwards;
+    opacity: 0;
+}
+.numero{
+    margin-right: 15px;
+}
+.texto{
+    font-size: 14px;
+    text-align: center;
+}
+
+
+
+@media screen and (min-width: 430px){
+
+    .datos{
+        display: block;
+        text-align: center;
+        width: 33%;
+    }
+    .numero{
+        margin-right: 0px;
+    }
+
+
+}
+@media screen and (min-width: 700px){
+
+    .texto{
+        font-size: 24px;
+    }
+
+}

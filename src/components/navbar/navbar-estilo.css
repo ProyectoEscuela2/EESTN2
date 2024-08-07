@@ -1,0 +1,53 @@
+.navbar-pc{
+    display: none;
+    text-align: center;
+    width: 100%;
+    background-color: var(--color-primario-oscuro);
+    box-sizing: border-box;
+}
+.navbar-pc-ul{
+    text-align: center;
+    color: var(--color-primario-claro);
+    width: 50%;
+    margin: 0px;
+    padding: 0px;
+}
+li{
+    list-style: none; 
+}
+.navbar-pc-li{
+    padding: 7px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    cursor: pointer;
+    margin-right: 2px;
+    transition: background-color 0.7s;
+}
+
+.navbar-a{
+    color: var(--color-primario-claro);
+    text-decoration: none;
+}
+
+.navbar-pc-li:hover{
+    background-color: #000000;
+}
+
+
+@media screen and (min-width: 430px) {
+
+    .navbar-mobile{
+        display: none;
+    }
+
+    .navbar-pc{
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar-pc-ul{
+        display: flex;
+        justify-content: center;
+    }
+
+}
