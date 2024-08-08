@@ -7,11 +7,11 @@
 ## Instalacion: 
 
 ```bash
-git clone https://github.com/ProyectoEscuela2/tecnica2.git
+git clone https://github.com/ProyectoEscuela2/EESTN2.git
 ``` 
 
 ```bash
-cd Tecnica2
+cd EESTN2
 ``` 
 
 ```bash
@@ -22,14 +22,13 @@ npm install
 ```bash 
 npm run dev
 ```
-Posteriormente abrir en el navegador: http://localhost:3000
+Posteriormente abrir en el navegador: http://localhost:5173
 
 ### Otros enlaces:
-- [Documentacion oficial de Next](https://nextjs.org/docs)
 - [Documentacion oficial de React](https://es.react.dev/learn)
 
 ### Mira nuestros perfiles de Github: 
-
+### Grupo 2024(Fundador):
 - [Ramiro Vega](https://github.com/ramirovega193)
 - [Alejo Molla](https://github.com/AlePingui)
 - [Emma Salazar](https://github.com/emmassalazar)

@@ -45,3 +45,8 @@
 .text-esp-main p{
     width: 70%;
 }
+
+button{
+    display: inline-flex;
+    align-items: center;
+}

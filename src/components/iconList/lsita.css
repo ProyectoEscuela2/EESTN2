@@ -1,0 +1,42 @@
+.list-img-cont{
+    margin-right: 30px;
+}
+.list-img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.list-li-text{
+    font-size: 25px;
+    border-left: 1px solid white;
+    padding-left: 20px;
+}
+.list-li-text span{
+    font-size: 17px;
+    color: rgb(189, 189, 189);
+
+}
+.list-li{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    width: 40%;
+    text-align: left;
+}
+.mostrarMas{
+    background-color: transparent;
+    font-size: 40px;
+    color: var(--color-secundario-brillante);
+    cursor: pointer;
+    padding: 5px;
+    outline: none;
+    border: none;
+}
+
+.list-ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+

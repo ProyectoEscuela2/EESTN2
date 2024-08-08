@@ -89,3 +89,104 @@
     cursor: pointer;
 
 }
+.cont-list{
+    width: 80%;
+    height: 280px;
+    overflow: hidden;
+}
+
+@keyframes expandEspText {
+    0%{
+        width: 61.8%;
+        height: 600px;
+    }
+    100%{
+        width: 100%;
+        min-height: 600px;
+        height: auto;
+    }
+}
+@keyframes shrinkEspTitulo {
+    0%{
+        width: 38.2%;
+        height: 600px;    
+    }
+    100%{
+        width: 0%;
+        overflow: hidden;
+    }
+}
+
+@keyframes shrinkEspText {
+    0%{
+
+        width: 100%;
+        min-height: 600px;
+        max-height: max-content;
+    }
+    100%{
+        width: 61.8%;
+        height: 600px;
+    }
+}
+@keyframes expandEspTitulo {
+    0%{
+        width: 0%;
+        overflow: hidden;
+    }
+    100%{
+
+        width: 38.2%;
+        height: 600px;    
+    }
+}
+
+
+.text-esp-main.active2{
+
+    animation: expandEspText 1s forwards ease;
+
+}
+
+.titulo-esp-main.active2{
+    
+    animation: shrinkEspTitulo 1s forwards ease;
+
+}
+
+.active2 .cont-list{
+    width: 100%;
+    height: auto;
+}
+
+.titulo-esp-main{
+    animation: expandEspTitulo 1s forwards ease;
+}
+.text-esp-main{
+    animation: shrinkEspText 1s forwards ease;
+}
+
+@keyframes verMenos {
+
+    0%{
+        opacity: 0;
+
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+
+.ver-menos{
+
+    color: white;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    text-decoration: underline;
+    cursor: pointer;
+    animation: verMenos 2s ease forwards;
+
+}

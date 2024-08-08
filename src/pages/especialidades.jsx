@@ -47,7 +47,8 @@ export default function Especialidades(){
                 
                 <Seccion titulo={dataActive.titulo} urlBoton={dataActive.diseñoCurricularSRC} textoBoton="Descargar diseño curricular"><p>{dataActive.acercaDeEspecialidad}</p></Seccion>
 
-                <SeccionInversa titulo="Pasantías"><Lista>{dataActive.practicasInfo}</Lista></SeccionInversa>
+                <SeccionInversa verMas="true" textoBoton="Ver mas" titulo="Pasantías"><Lista>{dataActive.practicasInfo}</Lista></SeccionInversa>
+
 
             </article>
         </section>
