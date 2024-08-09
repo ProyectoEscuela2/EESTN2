@@ -2,7 +2,12 @@
 
     display: flex;
     justify-content: center;
-    margin: 20px;
+    width: 100%;
+    margin-top: 20px;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    z-index: 1000;
 
 }
 .esp-ul-nav{
@@ -22,6 +27,8 @@
     border-right: 2px solid var(--color-primario-oscuro);
     cursor: pointer;
     animation: shrink 1s ease forwards;
+    
+    background-color: white;
 
 }
 .esp-li-nav:hover{
@@ -188,5 +195,23 @@
     text-decoration: underline;
     cursor: pointer;
     animation: verMenos 2s ease forwards;
+
+}
+.carT-titl{
+    text-align: center;
+    font-size: 60px;
+    margin: 50px;
+}
+.contenedor-carrusel-esp{
+
+
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+.contenedor-carrusel-esp:hover{
+
+
+     background-color: rgb(240, 240, 240);
 
 }

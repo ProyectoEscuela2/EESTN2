@@ -10,21 +10,32 @@ import { INFO_DATA } from "../assets/static/especialidades/informatica";
 import { ELECTRO_DATA } from "../assets/static/especialidades/electromecanica";
 import { Seccion, SeccionInversa } from "../components/seccion/seccion";
 import Lista from "../components/iconList/lista";
+import { CarruselTriple } from "../components/carruseles/carrusel";
+import { GALERIAS } from "../assets/static/Galerias/galeriaEspecialidades";
 
-const data = [INFO_DATA,ELECTRO_DATA,QUI_DATA,MMO_DATA ]
+const data = [INFO_DATA,ELECTRO_DATA,QUI_DATA,MMO_DATA ] // Aca se guardan los datos de todas las especialidades dentro de un array
 
 export default function Especialidades(){
 
     
     const [isActive, setActive] = useState(0)
-    const [dataActive, setData] = useState(data[0])
+    const [dataActive, setData] = useState(data[0])//Aca se selecciona cuales son los datos activos por defecto
+    const [galeriaLista, setGaleria] = useState()
+
+
 
     const changeActive = (id) => {
 
         setActive(id)
-        setData(data[id])
+        setData(data[id])//aqui se cambia cuales son los datos activos, es decir, lo que se tiene que mostrar
 
     }
+
+    useEffect(()=>{
+
+        setGaleria(GALERIAS[dataActive.titulo])//aca se actualizan las imagenes segun cuales datos esten activos
+
+    },[dataActive])
     return <>
     
         <section>
@@ -35,7 +46,8 @@ export default function Especialidades(){
                         <li onClick={() => changeActive(1)} id="1" className={`esp-li-nav ${isActive == 1 ? "active" : ""}`}><span> <BsTools className="esp-nav-icon" size={25}/> {isActive == 1 ? "Electromecanica" : ""}</span></li>
                         <li onClick={() => changeActive(2)} id="2" className={`esp-li-nav ${isActive == 2 ? "active" : ""}`}><span> <FaFlask className="esp-nav-icon" size={25}/> {isActive == 2 ? "Quimica" : ""}</span></li>
                         <li onClick={() => changeActive(3)} id="3" className={`esp-li-nav ${isActive == 3 ? "active" : ""}`}><span> <FaBuilding className="esp-nav-icon" size={25}/> {isActive == 3 ? "Construcciones" : ""}</span></li>
-                    </ul>
+                    </ul>{// El nav de especialidades, la funcion changeActive cambia los estados isActive y dataActive,
+                    }
                 </div>
             </nav>
 
@@ -49,7 +61,13 @@ export default function Especialidades(){
 
                 <SeccionInversa verMas="true" textoBoton="Ver mas" titulo="Pasantías"><Lista>{dataActive.practicasInfo}</Lista></SeccionInversa>
 
+                <h2 className="carT-titl">Galeria de la especialidad</h2>
 
+                <div className="align-center">
+                <div className="contenedor-carrusel-esp">
+                 {galeriaLista ? <CarruselTriple tamañoGrupos="3" imagenesList={galeriaLista}/> : ""}
+                </div>
+                </div>
             </article>
         </section>
 
