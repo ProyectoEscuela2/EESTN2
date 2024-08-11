@@ -1,3 +1,4 @@
+
 .esp-nav{
 
     display: flex;
@@ -17,6 +18,10 @@
 }
 .esp-contenedor-nav{
     width: 60%;
+}
+.esp-li-nav div{
+    display: flex;
+    align-items: center;
 }
 .esp-li-nav{
     padding: 20px;
@@ -57,16 +62,12 @@
     }
 }
 
-.active{
+.esp-active{
     animation: expandWidth 0.5s ease forwards;
     justify-content: left;
     color: var(--color-secundario-opaco);
 }
-.esp-li-nav span{
-    display: flex;
-    align-items: center;
-}
-.active .esp-nav-icon{
+.esp-active .esp-nav-icon{
     
     margin: 0px;
     padding: 0px;
@@ -81,8 +82,8 @@
 
 }
 .video-esp{
-    width: 80%;
-    height: 500px;
+    width: 80vw;
+    height: 55vw;
 }
 
 .flex-aling-center button{
@@ -91,15 +92,10 @@
     background-color: transparent;
     border: none;
     outline: none;
-    font-size: 22px;
+    font-size: 1.375rem;
     text-decoration: underline;
     cursor: pointer;
 
-}
-.cont-list{
-    width: 80%;
-    height: 280px;
-    overflow: hidden;
 }
 
 @keyframes expandEspText {
@@ -191,17 +187,13 @@
     background-color: transparent;
     border: none;
     outline: none;
-    font-size: 22px;
+    font-size: 1.375rem;
     text-decoration: underline;
     cursor: pointer;
     animation: verMenos 2s ease forwards;
 
 }
-.carT-titl{
-    text-align: center;
-    font-size: 60px;
-    margin: 50px;
-}
+
 .contenedor-carrusel-esp{
 
 
@@ -214,4 +206,21 @@
 
      background-color: rgb(240, 240, 240);
 
+}
+
+@media screen and (max-width:600px) {
+    .esp-nav-text{
+        display: none;
+    }
+
+    .esp-active{
+       animation: shrink 0.1s;
+    }
+    .esp-active .esp-nav-icon{
+
+        margin-right: 0px;
+    }
+    .contenedor-carrusel-esp{
+        width: 100vw;
+    }
 }

@@ -84,10 +84,10 @@ function CarruselTriple({tamañoGrupos, imagenesList}){
 
         <div className="conT-controls">
             <div className="carT-button" onClick={handleBack}>
-                <IoIosArrowBack  size={40}/>
+                <IoIosArrowBack  size="5vw"/>
             </div>
             <div className="carT-button" onClick={handleForward} >
-                <IoIosArrowForward  size={40}/>
+                <IoIosArrowForward  size="5vw"/>
             </div>
         </div>
     </>

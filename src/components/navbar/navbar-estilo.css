@@ -32,22 +32,12 @@ li{
 .navbar-pc-li:hover{
     background-color: #000000;
 }
+.navbar-pc{
+    display: flex;
+    justify-content: center;
+}
 
-
-@media screen and (min-width: 430px) {
-
-    .navbar-mobile{
-        display: none;
-    }
-
-    .navbar-pc{
-        display: flex;
-        justify-content: center;
-    }
-
-    .navbar-pc-ul{
-        display: flex;
-        justify-content: center;
-    }
-
+.navbar-pc-ul{
+    display: flex;
+    justify-content: center;
 }

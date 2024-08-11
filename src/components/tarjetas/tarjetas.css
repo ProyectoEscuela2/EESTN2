@@ -32,9 +32,6 @@
     }
     
 }
-
-
-
 .datos{
     display: flex;
     align-items: center;
@@ -63,29 +60,7 @@
     margin-right: 15px;
 }
 .texto{
-    font-size: 14px;
+    font-size: 1.375rem;
     text-align: center;
 }
 
-
-
-@media screen and (min-width: 430px){
-
-    .datos{
-        display: block;
-        text-align: center;
-        width: 33%;
-    }
-    .numero{
-        margin-right: 0px;
-    }
-
-
-}
-@media screen and (min-width: 700px){
-
-    .texto{
-        font-size: 24px;
-    }
-
-}

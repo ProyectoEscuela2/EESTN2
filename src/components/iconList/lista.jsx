@@ -26,7 +26,7 @@ export default function ListaPasantias({ children }){
                 {children.map( (pract, index) =>(
                     <>
 
-                    <li className="list-li" key={index}><div className="list-img-cont">{EMP_DATA[pract.id].logo ? <img src={EMP_DATA[pract.id].logo} alt="logo" className="list-img"/> : <BiSolidFactory size={70} /> }</div><div className="list-li-text">{EMP_DATA[pract.id].nombre}<br /><span>{EMP_DATA[pract.id].ubicacion}</span></div></li>
+                    <li className="list-li" key={index}><div className="list-img-cont">{EMP_DATA[pract.id].logo ? <img src={EMP_DATA[pract.id].logo} alt="logo" className="list-img"/> : <BiSolidFactory size="4rem" /> }</div><div className="list-li-text">{EMP_DATA[pract.id].nombre}<br /><span>{EMP_DATA[pract.id].ubicacion}</span></div></li>
                 
                     </>
                 ))}

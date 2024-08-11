@@ -21,7 +21,7 @@ export default function Especialidades(){
     const [isActive, setActive] = useState(0)
     const [dataActive, setData] = useState(data[0])//Aca se selecciona cuales son los datos activos por defecto
     const [galeriaLista, setGaleria] = useState()
-
+    const [viewport, setViewport] = useState(window.innerWidth)
 
 
     const changeActive = (id) => {
@@ -37,15 +37,15 @@ export default function Especialidades(){
 
     },[dataActive])
     return <>
-    
+
         <section>
             <nav className="esp-nav">
                 <div className="esp-contenedor-nav">
                     <ul className="esp-ul-nav">
-                        <li onClick={() => changeActive(0)} id="a0" className={`esp-li-nav ${isActive == 0 ? "active" : ""}`}><span> <FaMicrochip className="esp-nav-icon" size={25}/> {isActive == 0 ? "Informatica" : ""}</span></li>
-                        <li onClick={() => changeActive(1)} id="1" className={`esp-li-nav ${isActive == 1 ? "active" : ""}`}><span> <BsTools className="esp-nav-icon" size={25}/> {isActive == 1 ? "Electromecanica" : ""}</span></li>
-                        <li onClick={() => changeActive(2)} id="2" className={`esp-li-nav ${isActive == 2 ? "active" : ""}`}><span> <FaFlask className="esp-nav-icon" size={25}/> {isActive == 2 ? "Quimica" : ""}</span></li>
-                        <li onClick={() => changeActive(3)} id="3" className={`esp-li-nav ${isActive == 3 ? "active" : ""}`}><span> <FaBuilding className="esp-nav-icon" size={25}/> {isActive == 3 ? "Construcciones" : ""}</span></li>
+                        <li onClick={() => changeActive(0)} id="a0" className={`esp-li-nav ${isActive == 0 ? "esp-active" : ""}`}><div> <FaMicrochip className="esp-nav-icon" size={25}/> <span className="esp-nav-text">{isActive == 0 ? "Informatica" : ""}</span></div></li>
+                        <li onClick={() => changeActive(1)} id="1" className={`esp-li-nav ${isActive == 1 ? "esp-active" : ""}`}><div> <BsTools className="esp-nav-icon" size={25}/> <span className="esp-nav-text">{isActive == 1 ? "Electromecanica" : ""}</span></div></li>
+                        <li onClick={() => changeActive(2)} id="2" className={`esp-li-nav ${isActive == 2 ? "esp-active" : ""}`}><div> <FaFlask className="esp-nav-icon" size={25}/> <span className="esp-nav-text">{isActive == 2 ? "Quimica" : ""}</span></div></li>
+                        <li onClick={() => changeActive(3)} id="3" className={`esp-li-nav ${isActive == 3 ? "esp-active" : ""}`}><div> <FaBuilding className="esp-nav-icon" size={25}/> <span className="esp-nav-text">{isActive == 3 ? "Construcciones" : ""}</span></div></li>
                     </ul>{// El nav de especialidades, la funcion changeActive cambia los estados isActive y dataActive,
                     }
                 </div>
@@ -58,16 +58,17 @@ export default function Especialidades(){
                 </div>
                 
                 <Seccion titulo={dataActive.titulo} urlBoton={dataActive.diseñoCurricularSRC} textoBoton="Descargar diseño curricular"><p>{dataActive.acercaDeEspecialidad}</p></Seccion>
-
-                <SeccionInversa verMas="true" textoBoton="Ver mas" titulo="Pasantías"><Lista>{dataActive.practicasInfo}</Lista></SeccionInversa>
-
+                
                 <h2 className="carT-titl">Galeria de la especialidad</h2>
-
                 <div className="align-center">
                 <div className="contenedor-carrusel-esp">
-                 {galeriaLista ? <CarruselTriple tamañoGrupos="3" imagenesList={galeriaLista}/> : ""}
+                 {galeriaLista ? <CarruselTriple tamañoGrupos={viewport > 600 ? "3" : "2"} imagenesList={galeriaLista}/> : ""}
                 </div>
                 </div>
+
+                <SeccionInversa titulo="Pasantías"><Lista>{dataActive.practicasInfo}</Lista></SeccionInversa>
+
+
             </article>
         </section>
 

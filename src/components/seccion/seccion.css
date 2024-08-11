@@ -1,26 +1,24 @@
-.text-esp-main h1{
-    font-size: 44px;
-    
-}
-.text-esp-main p{
-    font-size: 22px;
+.text-sec-main p{
+    font-size: 1.5vw;
 }
 .flex-aling-center{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    
 }
-.flex-aling-center h1{
+.flex-aling-center h2{
     width: 100%;
     text-align: center;
+    font-size: 4vw;
 }
 
-.contenedor-esp-main{
+.contenedor-sec-main{
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
-.titulo-esp-main{
+.titulo-sec-main{
 
     background-color: var(--color-secundario-brillante);
     color: var(--color-primario-oscuro);
@@ -33,7 +31,7 @@
 }
 
 
-.text-esp-main{
+.text-sec-main{
     width: 61.8%;
     height: 600px;
     color: var(--color-primario-claro);
@@ -42,11 +40,48 @@
     justify-content: center;
     background-color: var(--color-primario-oscuro);
 }
-.text-esp-main p{
+.text-sec-main p{
     width: 70%;
+    height: 50%;
+    overflow-y: scroll;
 }
 
-button{
+.flex-aling-center button{
     display: inline-flex;
     align-items: center;
+    font-size: 2vw;
+}
+
+@media screen and (max-width:600px) {
+    .text-sec-main p{
+        overflow-y: initial;
+    }
+    .contenedor-sec-main{
+        display: block;
+        width: 100%;
+    }
+    .titulo-sec-main{
+        animation: none;
+        width: 100%; 
+        height: fit-content;
+    }
+    .flex-aling-center h2{
+        font-size: 8vw ;
+    }
+    .flex-aling-center{
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+        font-size: 3vw;
+    }
+    .text-sec-main{
+        padding: 0px;
+        height: max-content;
+        width: 100% ;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .text-sec-main p{
+        font-size: 1.5vh ;
+    }
 }

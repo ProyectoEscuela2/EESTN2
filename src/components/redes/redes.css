@@ -1,0 +1,189 @@
+.redes-cont{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    color: black;
+    z-index: 1000;
+}
+
+.redes-li{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    width: fit-content;
+    padding: 7px;
+    border-radius: 50%;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    color: black;
+    cursor: pointer;
+}
+
+.redes-a{
+    display: block;
+}
+.redes-li-tco{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+}
+.redes-cont-oculto{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+#art-1{
+    opacity: 0;
+    z-index: 100;
+    animation: mostrar 0.5s ease forwards;
+}
+#art-1:hover{
+    color: #0d9c00;
+    border: #0d9c00 2px solid;
+    transition: color 0.5s ease;
+}
+
+#art-2{
+    opacity: 0;
+    z-index: 100;
+    animation: mostrar 0.5s ease forwards;
+    animation-delay: 0.2s;
+}
+#art-2:hover{
+    color: #EA4335;
+    border: #EA4335 2px solid;
+    transition: color 0.5s ease;
+}
+
+#art-3{
+    opacity: 0;
+    z-index: 100;
+    animation: mostrar 0.5s ease forwards;
+    animation-delay: 0.4s;
+}
+#art-3:hover{
+    color: #0e76a8;
+    border: #0e76a8 2px solid;
+    transition: color 0.5s ease;
+}
+
+#art-4{
+    opacity: 0;
+    z-index: 100;
+    animation: mostrar 0.5s ease forwards;
+    animation-delay: 0.6s;
+}
+#art-4:hover{
+    color: #333;
+    border: #333 2px solid;
+    transition: color 0.5s ease;
+}
+
+
+.facebook:hover{
+    color: #4267B2;
+    border: #4267B2 2px solid;
+    transition: color 0.5s ease;
+}
+
+.instagram:hover{
+
+    animation: instagramAnimation 3s linear infinite;
+
+}
+
+@keyframes instagramAnimation {
+    
+    
+    0%{
+        opacity: 1;
+        color: #405DE6;
+        border: #405DE6 2px solid;
+    }
+    35%{
+        color: #833AB4;
+        border: #833AB4 2px solid;
+    }
+    80%{
+        color: #e22262;
+        border: #e22262 2px solid;
+    }
+    95%{
+        color: #FD1D1D;
+        border: #FD1D1D 2px solid;
+    }
+    100%{
+        opacity: 1;
+        color: #405DE6;
+        border: #405DE6 2px solid;
+    }
+
+
+}
+.Whatsapp:hover{
+    color: #25D366;
+    border: #25D366 2px solid;
+    transition: color 0.5s ease;
+}
+
+@keyframes mostrar {
+
+    0%{
+
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    
+}
+
+
+.redes-display{
+
+    display: flex;
+
+}
+
+
+.redes-false{
+
+    display: none;
+}
+.redes-li-tco:hover .redes-mas{
+    color: var(--color-secundario-brillante);
+    border: var(--color-secundario-brillante) 2px solid;
+}
+
+.notification{
+
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 2px solid #25D366;
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+    bottom: 20px;
+    right: 20px;
+    gap: 5px;
+
+}
+
+.notification-text{
+    
+    padding-left: 5px;
+    border-left: 2px solid #25D366;
+}
+
+@media screen and (max-width: 500px) {
+    
+    .redes-cont{
+        display: none;
+    }
+
+}

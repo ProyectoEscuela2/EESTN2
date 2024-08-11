@@ -10,14 +10,14 @@ export function Seccion({titulo,children, textoBoton, urlBoton}){
 
     return<>
     
-    <div className="contenedor-esp-main">
-        <div className="titulo-esp-main">
+    <div className="contenedor-sec-main">
+        <div className="titulo-sec-main">
             <div className="flex-aling-center">
-                <h1>{titulo}</h1>
+                <h2>{titulo}</h2>
                 {textoBoton ? <a href={urlBoton}><button>{textoBoton}</button></a> : ""}
              </div>
         </div>
-        <div className="text-esp-main">
+        <div className="text-sec-main">
             {children}
         </div>
     </div>
@@ -27,29 +27,18 @@ export function Seccion({titulo,children, textoBoton, urlBoton}){
 
 }
 
-export function SeccionInversa({titulo,children, textoBoton, urlBoton, verMas}){
-
-
-    const [isActive2, setActive2] = useState(false)
-
-    const handleMore = () =>{
-
-        setActive2(!isActive2)
-
-    }
-
+export function SeccionInversa({titulo,children, textoBoton, urlBoton}){
 
     return<>
     
-    <div className="contenedor-esp-main">
-        <div className={`text-esp-main ${isActive2 ? "active2" : ""}`}>
+    <div className="contenedor-sec-main">
+        <div className={`text-sec-main`}>
             {children}
-            {isActive2 ? <button className='ver-menos' onClick={verMas ? handleMore : ""}><FaArrowLeft size={40}/></button>  : "" }
         </div>
-        <div className={`titulo-esp-main ${isActive2 ? "active2" : ""}`}>
+        <div className={`titulo-sec-main`}>
             <div className="flex-aling-center">
-                <h1>{titulo}</h1>
-                {textoBoton ? <a href={urlBoton}><button onClick={verMas ? handleMore : ""}>{textoBoton}{verMas ? <FaArrowRight /> : "" }</button></a> : ""}
+                <h2>{titulo}</h2>
+                {textoBoton ? <a href={urlBoton}><button>{textoBoton}</button></a> : ""}
              </div>
         </div>
     </div>
