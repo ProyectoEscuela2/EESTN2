@@ -27,7 +27,7 @@ export default function Especialidades(){
     const changeActive = (id) => {
 
         setActive(id)
-        setData(data[id])//aqui se cambia cuales son los datos activos, es decir, lo que se tiene que mostrar
+        setData(data[id])//aca se cambia cuales son los datos activos, es decir, lo que se tiene que mostrar
 
     }
 

@@ -3,6 +3,7 @@ import React,{useState,useEffect} from "react"
 import "./carrusel.css"
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
+import { Link } from 'react-router-dom'
 
 function CarruselTriple({tamañoGrupos, imagenesList}){
 
@@ -14,6 +15,8 @@ function CarruselTriple({tamañoGrupos, imagenesList}){
     useEffect(() => {
         setImagenes(imagenesList);//se cambia el estado cada vez que cambian las imagenes que le pasas
     }, [imagenesList]);
+
+    console.log(imagenesList)
 
     useEffect(()=>{
 
@@ -46,6 +49,13 @@ function CarruselTriple({tamañoGrupos, imagenesList}){
 
     }
 
+    useEffect(() =>{
+
+        setDisplay(0)
+        setPrev(null)
+
+    },[imagenesList])
+
     return<>
 
 
@@ -61,11 +71,10 @@ function CarruselTriple({tamañoGrupos, imagenesList}){
                         {grp.map((img, index) =>(
 
                             <>
-
+                                
                                 <div key={index} className="carT-cont-img">
-                                    <img src={img.url} alt={img.alt} className="carT-img" />
+                                <a  href={img.url} target="_blank" rel="noreferrer noopener"><img src={img.url} alt={img.alt} className="carT-img" /></a>
                                 </div>
-                            
                             </>
 
                         ))}

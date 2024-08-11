@@ -6,10 +6,31 @@ export const GALERIAS = {
         [        
             {
               "id": 0,
-              "url": "/imagenes/imagenes/electromecanica/elect1.jpeg",
+              "url": "/imagenes/imagenes/informatica/imagen1.jpg",
               "alt": "Imagen"
 
-            }
+            },
+            {
+                "id": 1,
+                "url": "/imagenes/imagenes/informatica/imagen2.jpg",
+                "alt": "Imagen"
+  
+            },
+            {
+                "id": 2,
+                "url": "/imagenes/imagenes/informatica/imagen3.jpg",
+                "alt": "Imagen"
+  
+            },
+            {
+                "id": 3,
+                "url": "/imagenes/imagenes/informatica/imagen4.jpg",
+                "alt": "Imagen"
+  
+            },
+
+
+
         ],
     "Electromecanica": 
         [        
@@ -65,6 +86,29 @@ export const GALERIAS = {
                 "alt": "Imagen"
   
             },
-        ]    
+        ],
+        "Quimica":
+        [
+            {
+                "id": 0,
+                "url": "/imagenes/imagenes/quimica/imagen1.jpg",
+                "alt": "Imagen"
+            },
+            {
+                "id": 1,
+                "url": "/imagenes/imagenes/quimica/imagen2.jpg",
+                "alt": "Imagen"
+            },
+            {
+                "id": 2,
+                "url": "/imagenes/imagenes/quimica/imagen3.jpg",
+                "alt": "Imagen"
+            },
+            {
+                "id": 3,
+                "url": "/imagenes/imagenes/quimica/imagen4.jpg",
+                "alt": "Imagen"
+            },
+        ]     
 }
 

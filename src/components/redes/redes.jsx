@@ -53,16 +53,16 @@ export default function Redes(){
 
     <div className="redes-cont">
         <ul className="redes-ul">
-        <a className="redes-a" href=""><li className="redes-li facebook"><FaFacebook size={20} /></li></a>
-        <a className="redes-a" href=""><li className="redes-li instagram"><FaInstagram size={20} /></li></a>
-        <a className="redes-a" href=""><li className="redes-li Whatsapp"><FaWhatsapp size={20} /></li></a>
+        <a className="redes-a" href="https://www.facebook.com/profile.php?id=100009423868443" target="_blank" rel="noreferrer noopener"><li className="redes-li facebook"><FaFacebook size={20} /></li></a>
+        <a className="redes-a" href="" target="_blank" rel="noreferrer noopener"><li className="redes-li instagram"><FaInstagram size={20} /></li></a>
+        <a className="redes-a" href="" target="_blank" rel="noreferrer noopener"><li className="redes-li Whatsapp"><FaWhatsapp size={20} /></li></a>
             <li onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}  className="redes-li-tco">
                 <div className="redes-li redes-mas"><BsThreeDots size={20} /></div>
                 <div className={`redes-cont-oculto ${isHover ? "redes-display" : "redes-false"}`}>
                     <span className="redes-li"  id="art-1" ref={phoneRef} data-clipboard-text="336 499-9999" title="336 499-9999"><FaPhone size={20}/></span>
                     <span className="redes-li" id="art-2" ref={emailRef} data-clipboard-text="examplemail@examp.com" title="examplemail@examp.com"><SiGmail size={20}/></span>
-                    <a href=""><span className="redes-li" id="art-3"><FaLinkedin size={20}/></span></a>
-                    <a href=""><span className="redes-li" id="art-4"><FaGithub size={20}/></span></a>
+                    <a href="https://www.linkedin.com/school/eestn2/about/" target="_blank" rel="noreferrer noopener"><span className="redes-li" id="art-3"><FaLinkedin size={20}/></span></a>
+                    <a href="https://github.com/GrupoDAD" target="_blank" rel="noreferrer noopener"><span className="redes-li" id="art-4"><FaGithub size={20}/></span></a>
                 </div>
             </li>
         </ul>

@@ -14,7 +14,7 @@ export function Seccion({titulo,children, textoBoton, urlBoton}){
         <div className="titulo-sec-main">
             <div className="flex-aling-center">
                 <h2>{titulo}</h2>
-                {textoBoton ? <a href={urlBoton}><button>{textoBoton}</button></a> : ""}
+                {textoBoton ? <a href={urlBoton} target="_blank" rel="noreferrer noopener"><button>{textoBoton}</button></a> : ""}
              </div>
         </div>
         <div className="text-sec-main">
@@ -38,7 +38,7 @@ export function SeccionInversa({titulo,children, textoBoton, urlBoton}){
         <div className={`titulo-sec-main`}>
             <div className="flex-aling-center">
                 <h2>{titulo}</h2>
-                {textoBoton ? <a href={urlBoton}><button>{textoBoton}</button></a> : ""}
+                {textoBoton ? <a href={urlBoton} target="_blank" rel="noreferrer noopener"><button>{textoBoton}</button></a> : ""}
              </div>
         </div>
     </div>
