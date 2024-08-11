@@ -1,0 +1,16 @@
+.Collage {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	grid-template-rows: repeat(auto-fill, 1fr);
+	align-items: center;
+
+	width: 100%;
+	height: 100%;
+}
+
+.Collage img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}

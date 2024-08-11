@@ -2,10 +2,11 @@ import './styles/App.css'
 import { Navbarr } from './components/navbar/navbar.jsx'
 import { Footer } from './components/footer/footer.jsx'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import  Home  from './pages/home.jsx'
-import  Especialidades  from './pages/especialidades.jsx'
+import Home  from './pages/home.jsx'
+import Especialidades  from './pages/especialidades.jsx'
 import Redes from './components/redes/redes.jsx';
 import Contacto from './pages/contacto.jsx';
+import Galeria from './pages/galeria';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route path='/' element={<Home />}/>
             <Route path='/especialidades' element={<Especialidades />}/>
             <Route path='/contacto' element={<Contacto />}/>
+            <Route path="/galeria" element={<Galeria />} />
           </Routes>
         <Footer />
       </Router>
