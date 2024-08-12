@@ -8,10 +8,10 @@ import { MMO_DATA } from "../assets/static/especialidades/construcciones";
 import { QUI_DATA } from "../assets/static/especialidades/quimica";
 import { INFO_DATA } from "../assets/static/especialidades/informatica";
 import { ELECTRO_DATA } from "../assets/static/especialidades/electromecanica";
-import { Seccion, SeccionInversa } from "../components/seccion/seccion";
+import { Seccion, BotonSeccion } from "../components/seccion/seccion";
 import Lista from "../components/iconList/lista";
 import { CarruselTriple } from "../components/carruseles/carrusel";
-import { GALERIAS } from "../assets/static/Galerias/galeriaEspecialidades";
+import { IMAGENES } from "../assets/static/Galerias/imagenes";
 
 const data = [INFO_DATA,ELECTRO_DATA,QUI_DATA,MMO_DATA ] // Aca se guardan los datos de todas las especialidades dentro de un array
 
@@ -32,8 +32,8 @@ export default function Especialidades(){
     }
 
     useEffect(()=>{
-
-        setGaleria(GALERIAS[dataActive.titulo])//aca se actualizan las imagenes segun cuales datos esten activos
+        // GALERIAS[dataActive.titulo]
+        setGaleria(IMAGENES.filter(({especialidad}) => especialidad === dataActive.titulo))//aca se actualizan las imagenes segun cuales datos esten activos
 
     },[dataActive])
     return <>
@@ -57,7 +57,17 @@ export default function Especialidades(){
                     <iframe className="video-esp" src={dataActive.videoURL} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                 </div>
                 
-                <Seccion titulo={dataActive.titulo} urlBoton={dataActive.diseñoCurricularSRC} textoBoton="Descargar diseño curricular"><p>{dataActive.acercaDeEspecialidad}</p></Seccion>
+                <Seccion
+                    titulo={dataActive.titulo}
+                    boton={
+                        <BotonSeccion
+                            urlBoton={dataActive.diseñoCurricularSRC}
+                            textoBoton="Descargar diseño curricular"
+                        />
+                    }
+                >
+                    <p>{dataActive.acercaDeEspecialidad}</p>
+                </Seccion>
                 
                 <h2 className="carT-titl">Galeria de la especialidad</h2>
                 <div className="align-center">
@@ -66,7 +76,7 @@ export default function Especialidades(){
                 </div>
                 </div>
 
-                <SeccionInversa titulo="Pasantías"><Lista>{dataActive.practicasInfo}</Lista></SeccionInversa>
+                <Seccion invertida titulo="Pasantías"><Lista>{dataActive.practicasInfo}</Lista></Seccion>
 
 
             </article>

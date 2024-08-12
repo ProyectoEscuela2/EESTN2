@@ -3,3 +3,18 @@
 	text-align: center;
 	font-size: 3rem;
 }
+
+.Galeria__Carousel {
+	padding: 0 80px;
+	margin-bottom: 3rem;
+}
+
+.Galeria__Section {
+	margin: 150px 0;
+	text-align: center;
+	padding: 0 80px;
+}
+
+.Galeria__Section h3 {
+	font-size: 1.6rem;
+}

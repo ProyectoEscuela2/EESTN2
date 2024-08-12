@@ -57,6 +57,26 @@
     font-size: 2vw;
 }
 
+/* Ver Más activado */
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-column .titulo-sec-main, .flex-column .text-sec-main {
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+}
+
+/* Sección Invertida */
+.invertida {
+    order: 1;
+}
+
+.flex-column .text-sec-main {
+    order: 2;
+}
+
 @media screen and (max-width:600px) {
     .text-sec-main p{
         overflow-y: initial;

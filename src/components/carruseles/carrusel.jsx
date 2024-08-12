@@ -69,14 +69,9 @@ function CarruselTriple({tamañoGrupos, imagenesList}){
                     <div key={index} className={`grupos ${display == index ? "display" : ""} ${prev == index ? "prev" : ""} `}>
 
                         {grp.map((img, index) =>(
-
-                            <>
-                                
-                                <div key={index} className="carT-cont-img">
+                            <div key={index} className="carT-cont-img">
                                 <a  href={img.url} target="_blank" rel="noreferrer noopener"><img src={img.url} alt={img.alt} className="carT-img" /></a>
-                                </div>
-                            </>
-
+                            </div>
                         ))}
 
                     </div>

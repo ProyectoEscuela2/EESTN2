@@ -1,5 +1,5 @@
 import '../styles/App.css'
-import { Seccion, SeccionInversa } from "../components/seccion/seccion";
+import { Seccion } from "../components/seccion/seccion";
 import { BiSolidBriefcase, BiSolidStar } from "react-icons/bi";
 import { BiSolidBrain } from "react-icons/bi";
 import { BiSolidGraduation } from "react-icons/bi";
