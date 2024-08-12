@@ -29,10 +29,13 @@
     margin-right: 20px;
     border-radius: 50%;
     justify-content: center;
+
+    transition: transform 0.3s ease;
 }
 .carT-button:hover{
 
-    background-color: rgba(0, 0, 0, 0.555);
+    transform: scale(1.2);
+    /* background-color: rgba(0, 0, 0, 0.555); */
     
 
 }

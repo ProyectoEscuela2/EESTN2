@@ -1,3 +1,4 @@
+
 .inImg{
     position: absolute;
     z-index: -100;
@@ -6,14 +7,16 @@
 .contInicio{
     position:relative;
     overflow: hidden;
-    height: fit-content;
+    height:fit-content;
     display: flex;
     justify-content: center;
     text-align: center;
+
     color: var(--color-primario-claro);
     padding: 200px;
-    background-image: url("https://i.postimg.cc/d1rtVT8b/homeImg.webp");
-    background-size: 120%;
+    /* background-image: url("https://i.postimg.cc/d1rtVT8b/homeImg.webp"); */
+    background-image: url("../../public/imagenes/8.jpg");
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
     object-fit: fill;
@@ -21,13 +24,13 @@
 }
 .textInicio h1{
     font-size: 5rem;
-
+    letter-spacing: 5px;
 }
 .textInicio p{
     font-size: 16pt;
 }
 .gradient{
-    background: linear-gradient(black, transparent 80%);
+    background: linear-gradient( rgb(16, 21, 24, .5), 60%, transparent);
     width: 100%;
     z-index: -50;
     height: 1000px;
@@ -39,4 +42,150 @@
     bottom: 0;
     width: 101%;
     left: 0;
+}
+
+
+
+
+.contNosotros{
+    margin: 5rem;
+    padding: 2rem;
+}
+
+.contNosotros .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+
+    margin-top: 3rem;
+}
+
+.contNosotros .wrapper .contTexto {
+    flex: 1;
+    padding: 1rem;
+    max-width: 600px;
+
+}
+
+.contNosotros .wrapper .contTexto p{
+    text-align: justify;
+}
+
+.contNosotros .wrapper .contImg {
+    flex: 1;
+    padding: 1rem;
+    position: relative;
+    max-width: 600px;
+}
+
+.contNosotros .wrapper .contImg img {
+    width: 100%;
+    height: auto;
+    border-radius: .5rem;
+}
+
+@media (max-width: 768px) {
+    .contNosotros .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contNosotros .wrapper .contTexto,
+    .contNosotros .wrapper .contImg {
+        max-width: 100%;
+    }
+}
+
+.contObjetivos .contenedor-sec-main .text-sec-main .cont-list{
+    overflow: hidden;
+    height: fit-content;
+}
+
+
+
+
+
+
+.contEspecialidades {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+
+    height: fit-content;
+}
+
+.contEspecialidades .wrapper {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 2rem;
+}
+
+.contEspecialidades .wrapper div {
+    padding: 3rem;
+    height: 15rem;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background .5s ease-in-out;
+
+}
+
+.contEspecialidades .wrapper div a {
+    color: #fff;
+    font-size: 32px;
+    z-index: 1;
+    position: relative;
+}
+
+.contEspecialidades .wrapper .info {
+    grid-column: 1 / 4;
+    background: var(--color-secundario-opaco);
+}
+.contEspecialidades .wrapper .quimica {
+    grid-column: 4 / 5;
+    background: var(--color-secundario-acromatico);
+}
+.contEspecialidades .wrapper .mmo {
+    grid-column: 1 / 2;
+    background: var(--color-primario-oscuro);
+}
+.contEspecialidades .wrapper .electro {
+    grid-column: 2 / 5;
+    background: var(--color-secundario-brillante);
+}
+
+.contEspecialidades .wrapper .info:hover {
+    background-image: url("https://associationsnow.com/wp-content/uploads/2016/01/0111_javascript.jpg");
+    background-color: transparent;
+}
+.contEspecialidades .wrapper .quimica:hover {
+    background-image: url("https://concepto.de/wp-content/uploads/2014/08/quimica-1-e1589576962905.jpg");
+    background-color: transparent;
+}
+.contEspecialidades .wrapper .mmo:hover {
+    background-image: url("https://img.freepik.com/fotos-premium/planos-arquitectonicos-casa-proyecto-arquitectonico-concepto-construccion-dibujos-disenos-tecnicos-ingenieria-mesa-ai-generado_538213-3263.jpg");
+    background-color: transparent;
+}
+.contEspecialidades .wrapper .electro:hover {
+    background-image: url("../../public/imagenes/electrobanner.jpg");
+    background-color: transparent;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .contEspecialidades .wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .contEspecialidades .wrapper div {
+        padding: 2rem;
+    }
 }

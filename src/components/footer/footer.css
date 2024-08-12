@@ -21,7 +21,7 @@
     flex-wrap: wrap;
     align-items: center;
     width: 61.8%;
-    font-size: 2vw;
+    font-size: 1.5vw;
     border-top: 2px solid white;
     padding: 20px;
     border-bottom: 2px solid white;
@@ -31,5 +31,5 @@
     color: var(--color-primario-claro);
     padding: 20px;
     text-align: center;
-    font-size: 2vw
+    font-size: 1vw
 }
