@@ -23,8 +23,8 @@ const InformacionDeContacto = () => {
         </li>
         <li>
           <span>Email:</span>
-          <a className='contacto-texto' href="mailto:tadeolattanzio1@gmail.com" target="_blank" rel="noopener noreferrer">
-            tadeolattanzio1@gmail.com
+          <a className='contacto-texto' href="mailto:gdadtecnica2@gmail.com" target="_blank" rel="noopener noreferrer">
+            gdadtecnica2@gmail.com
           <span className="email-estatico"><SiGmail /></span>
           </a>
         </li>
@@ -41,8 +41,8 @@ const HorariosDeAtencion = () => {
     <div className="horarios-de-atencion">
       <h2>Horarios de Atención</h2>
       <ul className={`lista-horarios ${mostrarHorarios ? 'mostrar-horarios' : ''}`}>
-        <li>7:30 - 12:00</li>
-        <li>13:30 - 17:55</li>
+        <li>7:30hs - 12:00hs</li>
+        <li>15:30hs - 17:55hs</li>
       </ul>
       <button
         className="boton-horarios"
