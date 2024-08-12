@@ -14,7 +14,7 @@ function App() {
         <Redes />
           <Routes>
             <Route path='/' element={<Home />}/>
-            <Route path='/especialidades' element={<Especialidades />}/>
+            <Route path='/Especialidades' element={<Especialidades />}/>
           </Routes>
         <Footer />
       </Router>
