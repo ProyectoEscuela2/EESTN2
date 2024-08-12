@@ -68,6 +68,12 @@
     padding: 20px;
 }
 
+@media screen and (max-width: 600px) {
+    .flex-column .titulo-sec-main, .flex-column .text-sec-main {
+        padding: 0;
+    }
+}
+
 /* Sección Invertida */
 .invertida {
     order: 1;
@@ -100,7 +106,7 @@
         font-size: 3vw;
     }
     .text-sec-main{
-        padding: 0px;
+        padding: 0;
         height: max-content;
         width: 100% ;
         padding-top: 10px;

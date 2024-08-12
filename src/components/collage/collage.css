@@ -24,6 +24,12 @@
 	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 
+@media screen and (max-width: 600px) {
+	.limitado {
+		grid-auto-rows: 100px;
+	}
+}
+
 .limitado img:last-child {
 	grid-column: span 2;
 }

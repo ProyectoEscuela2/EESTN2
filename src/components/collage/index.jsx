@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Imagen from "../Imagen";
 import "./collage.css";
 
 export default function Collage({ imagenes, limitado }) {
@@ -15,7 +16,7 @@ export default function Collage({ imagenes, limitado }) {
 
 	return <div className={"Collage" + ((limitado == "true") ? " limitado" : "")}>
 		{lista.map(({alt, id, url}) => (
-			<img key={id} alt={alt} src={url} />
+			<Imagen key={id} alt={alt} url={url} />
 		))}
 	</div>
 }
