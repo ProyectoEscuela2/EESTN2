@@ -19,7 +19,7 @@ export default function Home(){
                     <p className="animation1">¡Bienvenido!</p>
                     <h1 className="animation1">EEST Nº 2</h1>
                     <p className="animation2">Gral. Ing. Manuel N. Savio, San Nicolas</p>
-                    <p className="animation3"><b>100</b> años de aprendizaje ininterrumpido</p>
+                    <h2 className="animation3"> ¡Celebrando los <b>100</b> años de nuestra institución!</h2>
             </div>     
         </div>
 
@@ -92,7 +92,7 @@ export default function Home(){
 
                 <div className="wrapper ">
                     <div className="info">
-                        <a href="#">Informática</a>
+                        <a href="/especialidades">Informática</a>
                     </div>
                     <div className="quimica">
                         <a href="#">Química</a>
