@@ -1,0 +1,106 @@
+/* contacto.css */
+
+.contenedor-contacto {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.contacto-map{
+
+  border-radius: 20px;
+  overflow: hidden;
+
+}
+.contenedor-informacion-de-contacto {
+  margin-bottom: 20px;
+}
+.contacto-texto{
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.informacion-de-contacto {
+  padding: 20px;
+  width: 90%;
+
+}
+
+.informacion-de-contacto h2 {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+}
+
+.informacion-de-contacto ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+.informacion-de-contacto li {
+  margin-bottom: 10px;
+}
+
+.informacion-de-contacto span {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.informacion-de-contacto p {
+  margin-bottom: 10px;
+}
+
+.telefono-estatico, .email-estatico {
+  font-size: 1.5rem;
+  color: #337ab7;
+}
+
+.contenedor-horarios-de-atencion {
+  margin-top: 20px;
+}
+
+.horarios-de-atencion {
+  padding: 20px;
+}
+
+.horarios-de-atencion h2 {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+}
+
+.boton-horarios {
+  background-color: #337ab7;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.boton-horarios:hover {
+  background-color: #23527c;
+}
+
+.lista-horarios {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+
+}
+
+.lista-horarios.mostrar-horarios {
+  max-height: 100px;
+  overflow: visible; 
+}
