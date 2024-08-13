@@ -9,7 +9,7 @@ import { QUI_DATA } from "../assets/static/especialidades/quimica";
 import { INFO_DATA } from "../assets/static/especialidades/informatica";
 import { ELECTRO_DATA } from "../assets/static/especialidades/electromecanica";
 import { Seccion, BotonSeccion } from "../components/seccion/seccion";
-import Lista from "../components/iconList/lista";
+import { ListaPasantias } from "../components/iconList/lista";
 import { CarruselTriple } from "../components/carruseles/carrusel";
 import { IMAGENES } from "../assets/static/Galerias/imagenes";
 
@@ -76,7 +76,7 @@ export default function Especialidades(){
                 </div>
                 </div>
 
-                <Seccion invertida titulo="Pasantías"><Lista>{dataActive.practicasInfo}</Lista></Seccion>
+                <Seccion invertida titulo="Pasantías"><ListaPasantias >{dataActive.practicasInfo}</ListaPasantias ></Seccion>
 
 
             </article>

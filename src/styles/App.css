@@ -123,14 +123,15 @@
 
 .contEspecialidades .wrapper {
     display: grid;
-    grid-gap: 1rem;
+    grid-gap: 1vw;
     grid-template-columns: repeat(4, 1fr);
     margin-top: 2rem;
+    width: 70vw;
 }
 
 .contEspecialidades .wrapper div {
     padding: 3rem;
-    height: 15rem;
+    height: 15vw;
     border-radius: .5rem;
     display: flex;
     justify-content: center;
@@ -138,13 +139,11 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    transition: background .5s ease-in-out;
-
+    transition: all .5s ease-in-out;
 }
-
 .contEspecialidades .wrapper div a {
     color: #fff;
-    font-size: 32px;
+    font-size: 2.5vw;
     z-index: 1;
     position: relative;
 }
@@ -166,21 +165,77 @@
     background: var(--color-secundario-brillante);
 }
 
+
+@keyframes aniacionInfo {
+    
+    from{
+        background-color: transparent;
+        background-image: url("https://associationsnow.com/wp-content/uploads/2016/01/0111_javascript.jpg");
+        opacity: 0;
+    }to{
+        opacity: 1;
+        background-image: url("https://associationsnow.com/wp-content/uploads/2016/01/0111_javascript.jpg");
+        background-color: transparent;
+
+    }
+    
+}
+
+@keyframes aniacionElectro {
+    
+    from{
+        background-image: url("../../public/imagenes/electrobanner.jpg");
+        background-color: transparent;
+        opacity: 0;
+    }to{
+        opacity: 1;
+        background-image: url("../../public/imagenes/electrobanner.jpg");
+        background-color: transparent;
+
+    }
+    
+}
+@keyframes aniacionQuimica {
+    
+    from{
+        background-image: url("https://concepto.de/wp-content/uploads/2014/08/quimica-1-e1589576962905.jpg");
+        background-color: transparent;
+        opacity: 0;
+    }to{
+        opacity: 1;
+        background-image: url("https://concepto.de/wp-content/uploads/2014/08/quimica-1-e1589576962905.jpg");
+        background-color: transparent;
+
+    }
+    
+}
+
+@keyframes aniacionMmo {
+    
+    from{
+        background-image: url("https://img.freepik.com/fotos-premium/planos-arquitectonicos-casa-proyecto-arquitectonico-concepto-construccion-dibujos-disenos-tecnicos-ingenieria-mesa-ai-generado_538213-3263.jpg");
+        background-color: transparent;
+        opacity: 0;
+    }to{
+        opacity: 1;
+        background-image: url("https://img.freepik.com/fotos-premium/planos-arquitectonicos-casa-proyecto-arquitectonico-concepto-construccion-dibujos-disenos-tecnicos-ingenieria-mesa-ai-generado_538213-3263.jpg");
+        background-color: transparent;
+
+    }
+    
+}
+
 .contEspecialidades .wrapper .info:hover {
-    background-image: url("https://associationsnow.com/wp-content/uploads/2016/01/0111_javascript.jpg");
-    background-color: transparent;
+    animation: aniacionInfo 0.5s ease forwards;
 }
 .contEspecialidades .wrapper .quimica:hover {
-    background-image: url("https://concepto.de/wp-content/uploads/2014/08/quimica-1-e1589576962905.jpg");
-    background-color: transparent;
+    animation: aniacionQuimica 0.5s ease forwards;
 }
 .contEspecialidades .wrapper .mmo:hover {
-    background-image: url("https://img.freepik.com/fotos-premium/planos-arquitectonicos-casa-proyecto-arquitectonico-concepto-construccion-dibujos-disenos-tecnicos-ingenieria-mesa-ai-generado_538213-3263.jpg");
-    background-color: transparent;
+    animation: aniacionMmo 0.5s ease forwards;
 }
 .contEspecialidades .wrapper .electro:hover {
-    background-image: url("../../public/imagenes/electrobanner.jpg");
-    background-color: transparent;
+    animation: aniacionElectro 0.5s ease forwards;
 }
 
 
@@ -193,4 +248,67 @@
     .contEspecialidades .wrapper div {
         padding: 2rem;
     }
+}
+
+.animation3{
+
+    animation: animation3 1s ease forwards;
+
+}
+
+.animation2{
+    animation: animation2 1s ease forwards;
+}
+
+@keyframes animation2 {
+
+    from{
+
+        transform: translateY(-20px);
+        opacity: 0;
+
+    }to{
+
+        transform: translateY(0px);
+        opacity: 1;
+
+    }
+}
+
+
+
+@keyframes animation3 {
+    
+    from{
+
+        transform: translateY(20px);
+        opacity: 0;
+
+    }to{
+
+        transform: translateY(0px);
+        opacity: 1;
+
+    }
+
+}
+.alinear{
+
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.contCarrousel{
+
+    padding: 2vw;
+    width: 80vw;
+
+}
+
+h2{
+    line-height: 100px;
+    font-size: 2.5rem;
+    text-align: center;
 }

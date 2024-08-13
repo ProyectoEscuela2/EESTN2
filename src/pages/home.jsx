@@ -1,25 +1,29 @@
 import '../styles/App.css'
 import { Seccion } from "../components/seccion/seccion";
-import { BiSolidBriefcase, BiSolidStar } from "react-icons/bi";
-import { BiSolidBrain } from "react-icons/bi";
-import { BiSolidGraduation } from "react-icons/bi";
-
 import {CarruselTriple} from "../components/carruseles/carrusel";
-
-
 import '../components/iconList/lista'
+import { Lista } from '../components/iconList/lista';
+import { HOME_DATA } from '../assets/static/home/home';
+import { useEffect, useState } from 'react';
+import { IMAGENES } from "../assets/static/Galerias/imagenes";
+import { Link } from 'react-router-dom';
 
 export default function Home(){
+
+    const fecha = new Date()
+    const year = fecha.getFullYear()
+    const nacEscuela = 1924
+    const [escuela, setEscuela] = useState(year - nacEscuela)
 
     return<>
 
         <div className="contInicio">
             <div className="gradient"></div>
                 <div className= "textInicio">
-                    <p className="animation1">¡Bienvenido!</p>
-                    <h1 className="animation1">EEST Nº 2</h1>
-                    <p className="animation2">Gral. Ing. Manuel N. Savio, San Nicolas</p>
-                    <h2 className="animation3"> ¡Celebrando los <b>100</b> años de nuestra institución!</h2>
+                    <p className="animation2">¡Bienvenido!</p>
+                    <h1 className="animation2">EEST Nº 2</h1>
+                    <p className="animation2">Gral. Ing. Manuel N. Savio, San Nicolás</p>
+                    <h2 className="animation3"> ¡Celebrando los {escuela} años de nuestra institución!</h2>
             </div>     
         </div>
 
@@ -47,41 +51,9 @@ export default function Home(){
 
         <div className="contObjetivos">
             <div className="contenedor-sec-main">
-                <h2 className="titulo-sec-main">Nuestros Objetivos</h2>
-            <div className="text-sec-main">
-                <div className="cont-list">
-                    <ul className="list-ul">
-                        <li className="list-li">
-                            <div className="list-img-cont">
-                                <BiSolidStar size="4rem" />
-                            </div>
-                            <div className="list-li-text">
-                                Preparamos a nuestros estudiantes para ser líderes en sus campos técnicos.
-                            </div>
-                        </li>
-
-                        <li className="list-li">
-                            <div className="list-img-cont">
-                                <BiSolidBriefcase size="4rem" />
-                            </div>
-                            <div className="list-li-text">
-                            Con conexiones directas con empresas líderes, para brindar oportunidades de prácticas profesionalizantes a cada estudiante.
-                            </div>
-                        </li>
-
-                        <li className="list-li">
-                            <div className="list-img-cont">
-                                <BiSolidBrain size="4rem" />
-                            </div>
-                            <div className="list-li-text">
-                            Brindamos una educación práctica enfocada en la innovación y la colaboración, para así impulsar el éxito de cada estudiante.
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>  
-                
+            <Seccion titulo="Nuestros objetivos">
+                    <Lista data={HOME_DATA}/>
+            </Seccion>
 
             </div>
         </div>
@@ -90,30 +62,37 @@ export default function Home(){
         <div className="flex-aling-center">
                 <h2>Nuestras Especialidades Técnicas</h2>
 
+                <Link to="/especialidades">
                 <div className="wrapper ">
+                    
                     <div className="info">
-                        <a href="/especialidades">Informática</a>
+                        Informática
                     </div>
+
                     <div className="quimica">
-                        <a href="#">Química</a>
+                        Química
                     </div>
 
                     <div className="mmo">
-                        <a href="#">Construcciones</a>
+                        Construcciones
                     </div>
+
                     <div className="electro">
-                        <a href="#">Electromécanica</a>
+                        Electromecánica
                     </div>
+
                 </div>
-                
+                </Link>
             </div>
         </div>
+        
+        <h2>Galeria</h2>
 
+        <div className="alinear">
         <div className="contCarrousel">
-            <div className="flex-aling-center">
-            </div>
+            <CarruselTriple tamañoGrupos="3" imagenesList={IMAGENES} />
         </div>
-
+        </div>
         
     </>
 }

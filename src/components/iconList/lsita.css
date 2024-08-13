@@ -7,7 +7,7 @@
     border-radius: 50%;
 }
 .list-li-text{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     border-left: 1px solid white;
     padding-left: 20px;
 }
@@ -37,6 +37,7 @@
 .list-ul{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .cont-list{

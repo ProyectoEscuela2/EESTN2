@@ -11,7 +11,7 @@ export default function Galeria() {
 	const modificarVerMas = () => setVerMas(!isVerMas);
 
 	return <div className={`Galeria`}>
-		<h2>Galeria!</h2>
+		<h2>Galería</h2>
 		{/* Carousel */}
 		<div className="Galeria__Carousel">
 			<CarruselTriple tamañoGrupos="3" imagenesList={IMAGENES} />
