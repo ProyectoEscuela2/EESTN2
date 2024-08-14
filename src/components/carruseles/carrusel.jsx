@@ -16,8 +16,6 @@ function CarruselTriple({tamañoGrupos, imagenesList}){
         setImagenes(imagenesList);//se cambia el estado cada vez que cambian las imagenes que le pasas
     }, [imagenesList]);
 
-    console.log(imagenesList)
-
     useEffect(()=>{
 
         const groups = []

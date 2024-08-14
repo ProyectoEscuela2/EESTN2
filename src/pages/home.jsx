@@ -42,9 +42,9 @@ export default function Home(){
                     </p>
                 </div>
                 <div className="contImg">
-                    <a href="/Galeria">
+                    <Link to="/galeria">
                         <img src="https://i.postimg.cc/d1rtVT8b/homeImg.webp" alt="..." />
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>
@@ -65,19 +65,19 @@ export default function Home(){
                 <Link to="/especialidades">
                 <div className="wrapper ">
                     
-                    <div className="info">
+                    <div className="info textoBlanco">
                         Informática
                     </div>
 
-                    <div className="quimica">
+                    <div className="quimica textoBlanco">
                         Química
                     </div>
 
-                    <div className="mmo">
+                    <div className="mmo textoBlanco">
                         Construcciones
                     </div>
 
-                    <div className="electro">
+                    <div className="electro textoBlanco">
                         Electromecánica
                     </div>
 
