@@ -32,7 +32,7 @@
 }
 
 .textInicio p{
-    font-size: 16pt;
+    font-size: 20pt;
 }
 .gradient{
     background: linear-gradient( rgb(16, 21, 24, .5), 60%, transparent);

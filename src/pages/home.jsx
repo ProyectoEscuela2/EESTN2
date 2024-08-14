@@ -21,7 +21,7 @@ export default function Home(){
             <div className="gradient"></div>
                 <div className= "textInicio">
                     <p className="animation2">¡Bienvenido!</p>
-                    <h1 className="animation2">EEST Nº 2</h1>
+                    <h1 className="animation2">Escuela de Educación Secundaria Técnica 2</h1>
                     <p className="animation2">Gral. Ing. Manuel N. Savio, San Nicolás</p>
                     <h2 className="animation3"> ¡Celebrando los {escuela} años de nuestra institución!</h2>
             </div>     

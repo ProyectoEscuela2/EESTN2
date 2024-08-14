@@ -234,4 +234,7 @@
     .contenedor-carrusel-esp{
         width: 100vw;
     }
+    .cont-list{
+        height: auto;
+    }
 }
