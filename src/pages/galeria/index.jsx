@@ -7,6 +7,7 @@ import './galeria.css';
 
 export default function Galeria() {
 	const [isVerMas, setVerMas] = useState(false);
+    const [viewport, setViewport] = useState(window.innerWidth)
 
 	const modificarVerMas = () => setVerMas(!isVerMas);
 
@@ -14,7 +15,7 @@ export default function Galeria() {
 		<h2>Galería</h2>
 		{/* Carousel */}
 		<div className="Galeria__Carousel">
-			<CarruselTriple tamañoGrupos="3" imagenesList={IMAGENES} />
+			<CarruselTriple tamañoGrupos={viewport > 900 ? "3" : "1"} imagenesList={IMAGENES} />
 		</div>
 
 		{/* Sección: Instalaciones */}

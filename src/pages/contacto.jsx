@@ -6,6 +6,9 @@ import Map from '../components/mapa/mapa';
 
 const InformacionDeContacto = () => {
   return (
+    
+    
+    
     <div className="informacion-de-contacto">
       <h2>Información de Contacto</h2>
       <ul>
@@ -34,40 +37,48 @@ const InformacionDeContacto = () => {
   );
 };
 
-const HorariosDeAtencion = () => {
-  const [mostrarHorarios, setMostrarHorarios] = useState(false);
-
-  return (
-    <div className="horarios-de-atencion">
-      <h2>Horarios de Atención</h2>
-      <ul className={`lista-horarios ${mostrarHorarios ? 'mostrar-horarios' : ''}`}>
-        <li>7:30hs - 12:00hs</li>
-        <li>15:30hs - 17:55hs</li>
-      </ul>
-      <button
-        className="boton-horarios"
-        onClick={() => setMostrarHorarios(!mostrarHorarios)}
-      >
-        {mostrarHorarios ? 'Ocultar Horarios' : 'Ver Horarios'}
-      </button>
-    </div>
-  );
-};
 
 const Contacto = () => {
+
+
+  function openMailClient() {
+    window.location.href = 'mailto:tecnica2sannicolas@abc.gob.ar';
+  }
+
   return (
     <section className="contenedor-contacto">
-      <div className="contacto-cont">
-      <div className="contenedor-informacion-de-contacto">
-        <InformacionDeContacto />
-      </div>
-      <div className="contenedor-horarios-de-atencion">
-        <HorariosDeAtencion />
-      </div>
-      </div>
-      <div className="contacto-map">
-        <Map />
-      </div>
+
+    <div className="informacion-de-contacto">
+      <div className="contenedor-texto-contacto">
+      <h2>Información de Contacto</h2>
+      <ul>
+        <li>
+          <span>Dirección:</span>
+          <p>Avenida Moreno 79, San Nicolás de los Arroyos</p>
+        </li>
+        <li className='alinear-contacto'>
+          <span>Teléfono:</span>
+            +54 3364-110-849
+          <span className="telefono-estatico"><FaPhone /></span>
+        </li>
+        <li>
+          <button className='contacto-mail-btn' onClick={openMailClient}>Envíanos un mail</button>
+        </li>
+      </ul>
+    </div>
+    <div className="contenedor-mapa-contacto">
+
+      <Map className="mapa-contacto"/>
+
+    </div>
+    </div>
+    <div className="contenedor-horarios-contacto">
+      <h2>Horarios de secretaria</h2>
+      <ul className='ul-horarios-contacto'>
+        <li className='li-horarios-contacto'>7:30hs - 12:00hs</li>
+        <li className='li-horarios-contacto'>15:30hs - 17:55hs</li>
+      </ul> 
+    </div>
     </section>
   );
 };

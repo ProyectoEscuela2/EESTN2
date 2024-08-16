@@ -3,7 +3,7 @@
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
-    height: fit-content;
+    height: 500px;
 }
 
 .grupos{
@@ -17,10 +17,10 @@
 
     width: 33%;
     margin: 10px;
-
 }
 .carT-img{
     width: 100%;
+    height: 100%;
 }
 .carT-button{
     display: flex;
@@ -29,7 +29,6 @@
     margin-right: 20px;
     border-radius: 50%;
     justify-content: center;
-
     transition: transform 0.3s ease;
 }
 .carT-button:hover{
@@ -43,7 +42,6 @@
     display: flex;
     width: 100%;
     justify-content: center;
-    margin-top: 20px;
 }
 
 @keyframes display {
@@ -82,4 +80,13 @@
     text-align: center;
     font-size: 3rem;
     margin: 50px;
+}
+
+@media screen and (max-width = 900px) {
+    .cont-carT{
+        height: 300px;
+    }
+    .carT-cont-img{
+        width: 100%;
+    }
 }

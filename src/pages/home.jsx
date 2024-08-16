@@ -4,9 +4,10 @@ import {CarruselTriple} from "../components/carruseles/carrusel";
 import '../components/iconList/lista'
 import { Lista } from '../components/iconList/lista';
 import { HOME_DATA } from '../assets/static/home/home';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useContext } from 'react';
 import { IMAGENES } from "../assets/static/Galerias/imagenes";
 import { Link } from 'react-router-dom';
+import { espContexto } from '../App';
 
 export default function Home(){
 
@@ -14,6 +15,9 @@ export default function Home(){
     const year = fecha.getFullYear()
     const nacEscuela = 1924
     const [escuela, setEscuela] = useState(year - nacEscuela)
+    const [viewport, setViewport] = useState(window.innerWidth)
+    const {espActiveContx, handleEsp} = useContext(espContexto)
+
 
     return<>
 
@@ -28,10 +32,7 @@ export default function Home(){
         </div>
 
         <div className="contNosotros">
-            <div className="flex-aling-center">
                 <h2>¿Quiénes Somos?</h2>
-            </div>
-
             <div className="wrapper">
                 <div className="contTexto">
                     <p>Fundada en 1924, la Escuela de Educación Secundaria Técnica N°2 Gral. Ing. Manuel Nicolás Savio de San Nicolás es una institución educativa en pleno proceso de transformación. La continua adaptación de su oferta educativa a las necesidades de la formación integral de sus alumnos, la propone como protagonista y referente dentro del ámbito educativo. <br />
@@ -58,39 +59,47 @@ export default function Home(){
             </div>
         </div>
 
-        <div className="contEspecialidades">
-        <div className="flex-aling-center">
-                <h2>Nuestras Especialidades Técnicas</h2>
 
-                <Link to="/especialidades">
+
+
+
+
+
+
+
+        <h2>Nuestras Especialidades Técnicas</h2>
+        <div className="contEspecialidades">
                 <div className="wrapper ">
                     
-                    <div className="info textoBlanco">
+                    <Link to="/especialidades" className="info textoBlanco"><div onMouseEnter={() => handleEsp(0)} >
                         Informática
-                    </div>
+                    </div></Link>
 
-                    <div className="quimica textoBlanco">
+                    <Link to="/especialidades" className="quimica textoBlanco"><div onMouseEnter={() => handleEsp(2)} >
                         Química
-                    </div>
+                    </div></Link>
 
-                    <div className="mmo textoBlanco">
+                    <Link to="/especialidades" className="mmo textoBlanco"><div onMouseEnter={() => handleEsp(3)} >
                         Construcciones
-                    </div>
+                    </div></Link>
 
-                    <div className="electro textoBlanco">
+                    <Link to="/especialidades" className="electro textoBlanco"><div onMouseEnter={() => handleEsp(1)} >
                         Electromecánica
-                    </div>
+                    </div></Link>
 
                 </div>
-                </Link>
             </div>
-        </div>
+
+
+
+
+
+
         
         <h2>Galeria</h2>
-
         <div className="alinear">
         <div className="contCarrousel">
-            <CarruselTriple tamañoGrupos="3" imagenesList={IMAGENES} />
+            <CarruselTriple tamañoGrupos={viewport > 900 ? "3" : "1"} imagenesList={IMAGENES} />
         </div>
         </div>
         

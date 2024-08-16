@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState, useContext } from 'react';
 import "../styles/especialidades.css"
 import { FaMicrochip } from "react-icons/fa6";
 import { BsTools } from "react-icons/bs";
@@ -12,17 +12,24 @@ import { Seccion, BotonSeccion } from "../components/seccion/seccion";
 import { ListaPasantias } from "../components/iconList/lista";
 import { CarruselTriple } from "../components/carruseles/carrusel";
 import { IMAGENES } from "../assets/static/Galerias/imagenes";
+import { espContexto } from '../App';
+
 
 const data = [INFO_DATA,ELECTRO_DATA,QUI_DATA,MMO_DATA ] // Aca se guardan los datos de todas las especialidades dentro de un array
 
 export default function Especialidades(){
 
-    
-    const [isActive, setActive] = useState(0)
+    const {espActiveContx, handleEsp} = useContext(espContexto)
+    const [isActive, setActive] = useState(espActiveContx)
     const [dataActive, setData] = useState(data[0])//Aca se selecciona cuales son los datos activos por defecto
     const [galeriaLista, setGaleria] = useState()
     const [viewport, setViewport] = useState(window.innerWidth)
 
+    useEffect(() => {
+
+        window.scrollTo(0,0)
+
+    },[])
 
     const changeActive = (id) => {
 
@@ -72,7 +79,7 @@ export default function Especialidades(){
                 <h2 className="carT-titl">Galeria de la especialidad</h2>
                 <div className="align-center">
                 <div className="contenedor-carrusel-esp">
-                 {galeriaLista ? <CarruselTriple tamañoGrupos={viewport > 600 ? "3" : "2"} imagenesList={galeriaLista}/> : ""}
+                 {galeriaLista ? <CarruselTriple tamañoGrupos={viewport > 900 ? "3" : "1"} imagenesList={galeriaLista}/> : ""}
                 </div>
                 </div>
 

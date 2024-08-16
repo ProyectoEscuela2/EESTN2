@@ -3,15 +3,10 @@
 .contenedor-contacto {
   max-width: 800px;
   margin: 40px auto;
-  padding: 20px;
   background-color: #f7f7f7;
   border: 1px solid #ddd;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
 }
 .contacto-map{
 
@@ -28,9 +23,17 @@
   gap: 7px;
 }
 .informacion-de-contacto {
-  padding: 20px;
-  width: 90%;
 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.contenedor-texto-contacto{
+  padding: 20px;
+  width: 40%;
 }
 
 .informacion-de-contacto h2 {
@@ -103,4 +106,82 @@
 .lista-horarios.mostrar-horarios {
   max-height: 100px;
   overflow: visible; 
+}
+.alinear-contacto{
+  display: flex;
+  align-items: center;
+}
+.contacto-mail-btn{
+  outline: none;
+  border: none;
+  padding: 20px;
+  background-color: #337ab7;
+  border: 3px solid #337ab7 ;
+  color: white;
+  font-size: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.contacto-mail-btn:hover{
+  background-color: #0e4d84;
+}
+
+.contacto-mail-btn:active{
+  border: 3px solid #0e4d84 ;
+}
+
+.ul-horarios-contacto{
+  font-size: 25px;
+  gap: 20px;
+  text-align: center;
+}
+.contenedor-horarios-contacto{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contenedor-horarios-contacto h2{
+      width: 100%;
+}
+
+.mapboxgl-map{
+  
+  border-radius: 50%;
+
+
+}
+
+.informacion-de-contacto{
+  border-bottom: 2px solid black;
+  padding: 60px 0px;
+}
+
+.contenedor-texto-contacto h2{
+  text-align: initial;
+}
+.contenedor-horarios-contacto{
+  padding: 60px;
+}
+
+@media screen and (max-width: 750px) {
+
+  .contenedor-texto-contacto{
+
+    width: 100%;
+    text-align: center;
+
+  }
+  .alinear-contacto{
+    justify-content: center;
+  }
+  .contenedor-texto-contacto h2{
+    text-align: center;
+  }
+  .mapboxgl-map{
+  
+    border-radius: 15%;
+
+  }
 }

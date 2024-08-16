@@ -1,9 +1,17 @@
+.flex-aling-center h2{
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    line-height:2rem;
+}
 
 .inImg{
     position: absolute;
     z-index: -100;
     object-fit: cover;
 }
+
+
 .contInicio{
     position:relative;
     overflow: hidden;
@@ -11,9 +19,8 @@
     display: flex;
     justify-content: center;
     text-align: center;
-
+    padding: 150px;
     color: var(--color-primario-claro);
-    padding: 200px;
     /* background-image: url("https://i.postimg.cc/d1rtVT8b/homeImg.webp"); */
     background-image: url("../../imagenes/8.jpg");
     background-size: cover;
@@ -23,12 +30,15 @@
     z-index: -100;
 }
 .textInicio h1{
-    font-size: 5rem;
-    letter-spacing: 5px;
+    font-size: 3rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 .textInicio h2{
-    line-height: 100px;
     font-size: 2.5rem;
+    line-height: 3rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .textInicio p{
@@ -110,29 +120,23 @@
     height: fit-content;
 }
 
-
-
-
-
-
-.contEspecialidades {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    justify-content: center;
-
-    height: fit-content;
-}
-
 .contEspecialidades .wrapper {
     display: grid;
     grid-gap: 1vw;
     grid-template-columns: repeat(4, 1fr);
     margin-top: 2rem;
-    width: 70vw;
+    width: 60%;
+    font-size: 1.5rem;
 }
 
-.contEspecialidades .wrapper div {
-    padding: 3rem;
+.contEspecialidades{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.contEspecialidades .wrapper a div {
     height: 15vw;
     border-radius: .5rem;
     display: flex;
@@ -143,26 +147,20 @@
     background-repeat: no-repeat;
     transition: all .5s ease-in-out;
 }
-.contEspecialidades .wrapper div a {
-    color: #fff;
-    font-size: 2.5vw;
-    z-index: 1;
-    position: relative;
-}
 
-.contEspecialidades .wrapper .info {
+.info {
     grid-column: 1 / 4;
     background: var(--color-secundario-opaco);
 }
-.contEspecialidades .wrapper .quimica {
+.quimica {
     grid-column: 4 / 5;
     background: var(--color-secundario-acromatico);
 }
-.contEspecialidades .wrapper .mmo {
+.mmo {
     grid-column: 1 / 2;
     background: var(--color-primario-oscuro);
 }
-.contEspecialidades .wrapper .electro {
+.electro {
     grid-column: 2 / 5;
     background: var(--color-secundario-brillante);
 }
@@ -245,16 +243,16 @@
 @media screen and (max-width: 900px) {
     .contEspecialidades .wrapper {
         grid-template-columns: 1fr;
-    }
-
-    .contEspecialidades .wrapper div {
-        padding: 2rem;
+        font-size: initial;
+        width: 80%;
+        height: max-content;
     }
 }
 
 .animation3{
 
     animation: animation3 1s ease forwards;
+    line-height: 1rem;
 
 }
 
@@ -306,11 +304,13 @@
 
     padding: 2vw;
     width: 80vw;
+    height: min-content;
 
 }
 
 h2{
     line-height: 100px;
     font-size: 2.5rem;
+    line-height: 3rem;
     text-align: center;
 }

@@ -1,4 +1,3 @@
-
 .esp-nav{
 
     display: flex;
@@ -32,7 +31,6 @@
     border-right: 2px solid var(--color-primario-oscuro);
     cursor: pointer;
     animation: shrink 1s ease forwards;
-    
     background-color: white;
 
 }
@@ -78,7 +76,7 @@
 
     display: flex;
     justify-content: center;
-    margin: 100px;
+    margin: 100px 5px;
 
 }
 .video-esp{
@@ -219,7 +217,7 @@
 
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:900px) {
     .esp-nav-text{
         display: none;
     }
@@ -233,8 +231,14 @@
     }
     .contenedor-carrusel-esp{
         width: 100vw;
+        padding: 0px;
     }
     .cont-list{
         height: auto;
     }
+    .video-esp{
+        width: 100vw;
+        height: 55vw;
+    }
+    
 }

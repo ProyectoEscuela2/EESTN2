@@ -7,10 +7,23 @@ import Especialidades  from './pages/especialidades.jsx'
 import Redes from './components/redes/redes.jsx';
 import Contacto from './pages/contacto.jsx';
 import Galeria from './pages/galeria';
+import { createContext, useState } from 'react';
+export const espContexto = createContext(0);
 
 function App() {
+
+  const [espActiveContx, setEspActiveContx] = useState(0)
+
+  const handleEsp = (idEsp) =>{
+
+    setEspActiveContx(idEsp)
+
+  }
+
   return (
     <>
+
+    <espContexto.Provider value={{espActiveContx, handleEsp}}>
       <Router>
         <Navbarr />
         <Redes />
@@ -22,7 +35,7 @@ function App() {
           </Routes>
         <Footer />
       </Router>
-
+      </espContexto.Provider>
       
     
     
