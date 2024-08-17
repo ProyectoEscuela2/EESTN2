@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { CarruselTriple } from '../../components/carruseles/carrusel.jsx';
 import { Seccion, BotonVerMas } from "../../components/seccion/seccion.jsx";
 import Collage from "../../components/collage";
@@ -8,8 +8,14 @@ import './galeria.css';
 export default function Galeria() {
 	const [isVerMas, setVerMas] = useState(false);
     const [viewport, setViewport] = useState(window.innerWidth)
-
 	const modificarVerMas = () => setVerMas(!isVerMas);
+
+
+	useEffect(() => {
+
+        window.scrollTo(0,0)
+
+    },[])
 
 	return <div className={`Galeria`}>
 		<h2>Galería</h2>

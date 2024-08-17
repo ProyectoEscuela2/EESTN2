@@ -132,5 +132,25 @@ export const EMP_DATA = [
         "ubicacion":"Dr. Román Subiza 1750",
         "logo": "imagenes/logos/pamsa.jpeg",
         "title": "Planta química"
+    },{
+        "id": 21,
+        "nombre": "Red de servicios",
+        "title": "Red de servicios"
+    },{
+        "id": 22,
+        "nombre": "IAS",
+        "ubicacion":"Av. Central 1875",
+        "logo": "imagenes/logos/IAS.png",
+        "title": "Instituto Argentino de Siderurgia"
+    },{
+        "id": 23,
+        "nombre": "LEA",
+        "ubicacion":"Colón 334",
+        "logo": "imagenes/logos/LEA.png",
+        "title": "laboratorio de estudios ambientales UTN"
     }
+
+
+
+
 ]

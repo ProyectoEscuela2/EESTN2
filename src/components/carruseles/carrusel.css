@@ -82,7 +82,7 @@
     margin: 50px;
 }
 
-@media screen and (max-width = 900px) {
+@media screen and (max-width: 900px) {
     .cont-carT{
         height: 300px;
     }

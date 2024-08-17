@@ -44,7 +44,7 @@ export default function Home(){
                 </div>
                 <div className="contImg">
                     <Link to="/galeria">
-                        <img src="https://i.postimg.cc/d1rtVT8b/homeImg.webp" alt="..." />
+                        <img src="https://i.postimg.cc/d1rtVT8b/homeImg.webp" alt="imagenHome" />
                     </Link>
                 </div>
             </div>
@@ -58,14 +58,6 @@ export default function Home(){
 
             </div>
         </div>
-
-
-
-
-
-
-
-
 
         <h2>Nuestras Especialidades Técnicas</h2>
         <div className="contEspecialidades">
@@ -91,11 +83,6 @@ export default function Home(){
             </div>
 
 
-
-
-
-
-        
         <h2>Galeria</h2>
         <div className="alinear">
         <div className="contCarrousel">
