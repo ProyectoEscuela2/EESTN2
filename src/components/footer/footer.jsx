@@ -24,7 +24,8 @@ export function Footer(){
                     </div>
                 </div>
                 <div className="footer_bott">
-                    <h6>Grupo de desarrollo y ampliacion digital - Desarrollo independiente</h6>
+                    <h6>2024 | Grupo de desarrollo y ampliacion digital - Desarrollo independiente</h6>
+                    <p>Tadeo Lattanzio, Alejo Molla, Emma Salazar, Ramiro Vega.</p>
                 </div>
          </footer>
         </>

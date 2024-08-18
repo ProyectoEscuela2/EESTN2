@@ -60,7 +60,7 @@ export default function Redes(){
                 <div className="redes-li redes-mas"><BsThreeDots size={20} /></div>
                 <div className={`redes-cont-oculto ${isHover ? "redes-display" : "redes-false"}`}>
                     <span className="redes-li"  id="art-1" ref={phoneRef} data-clipboard-text="336 499-9999" title="336 499-9999"><FaPhone size={20}/></span>
-                    <span className="redes-li" id="art-2" ref={emailRef} data-clipboard-text="examplemail@examp.com" title="examplemail@examp.com"><SiGmail size={20}/></span>
+                    <span className="redes-li" id="art-2" ref={emailRef} data-clipboard-text="tecnica2sannicolas@abc.gob.ar" title="tecnica2sannicolas@abc.gob.ar"><SiGmail size={20}/></span>
                     <a href="https://www.linkedin.com/school/eestn2/about/" target="_blank" rel="noreferrer noopener"><span className="redes-li" id="art-3"><FaLinkedin size={20}/></span></a>
                     <a href="https://github.com/GrupoDAD" target="_blank" rel="noreferrer noopener"><span className="redes-li" id="art-4"><FaGithub size={20}/></span></a>
                 </div>
