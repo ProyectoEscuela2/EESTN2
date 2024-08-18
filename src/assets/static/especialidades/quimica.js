@@ -1,5 +1,5 @@
 export const QUI_DATA = {
-    "videoURL": "https://www.youtube.com/embed/dnPapnTgtsc",
+    "videoURL": "",
     "titulo":"Química",
     "acercaDeEspecialidad": [ // [Paragraph, Paragraph, ..., Paragraph]
         "La especialidad de Química dura 4 años.",

@@ -97,10 +97,10 @@
 }
 
 .contNosotros .wrapper .contImg img {
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: fit-content;
     border-radius: 100%;
-    border: 2px solid black;
+    border: 1px solid rgb(0, 0, 0,.1);
 }
 
 @media (max-width: 768px) {
@@ -136,9 +136,8 @@
     margin-bottom: 100px;
 }
 
-.contEspecialidades .wrapper a div {
+.contEspecialidades .wrapper div {
     height: 15vw;
-    border-radius: .5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -146,6 +145,8 @@
     background-position: center;
     background-repeat: no-repeat;
     transition: all .5s ease-in-out;
+
+    font-size: 150%;
 }
 
 .info {
@@ -162,7 +163,8 @@
 }
 .electro {
     grid-column: 2 / 5;
-    background: var(--color-secundario-brillante);
+    background: #4a83ac;
+
 }
 
 
@@ -253,11 +255,26 @@
 }
 
 @media screen and (max-width: 500px) {
+    .textInicio h1{
+        font-size: 1.5rem;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .textInicio h2{
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .textInicio p{
+        font-size: 15pt;
+    }
+
 .contNosotros .wrapper .contImg img {
     width: 250px;
     height: 250px;
     border-radius: 100%;
-    border: 2px solid black;
 }
 .contNosotros .wrapper .contImg{
     padding: 0px;

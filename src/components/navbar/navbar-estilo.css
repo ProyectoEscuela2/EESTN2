@@ -4,6 +4,8 @@
     width: 100%;
     background-color: var(--color-primario-oscuro);
     box-sizing: border-box;
+
+
 }
 .navbar-pc-ul{
     text-align: center;
@@ -11,10 +13,12 @@
     width: 50%;
     margin: 0px;
     padding: 0px;
+
 }
 li{
     list-style: none; 
 }
+
 .navbar-pc-li{
     padding: 7px;
     padding-top: 25px;
@@ -27,6 +31,7 @@ li{
 .navbar-a{
     color: var(--color-primario-claro);
     text-decoration: none;
+    height: fit-content;
 }
 
 .navbar-pc-li:hover{
@@ -35,9 +40,19 @@ li{
 .navbar-pc{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .navbar-pc-ul{
     display: flex;
     justify-content: center;
+}
+
+.contImg{
+    margin-right: 50px;
+}
+img{
+    height: fit-content;
+    width: 50px;
+    margin: 10px;
 }

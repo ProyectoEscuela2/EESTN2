@@ -1,5 +1,6 @@
 import "./footer.css"
-import imagenFooter from "../../assets/logo_escuela.png"
+// import imagenFooter from "../../assets/logo_escuela.png"
+import imagenFooter from "../../assets/logoesc.svg"
 export function Footer(){
 
     return(

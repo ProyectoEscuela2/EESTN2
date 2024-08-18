@@ -73,10 +73,10 @@ const Contacto = () => {
     </div>
     </div>
     <div className="contenedor-horarios-contacto">
-      <h2>Horarios de secretaria</h2>
+      <h2>Horarios de Secretaría</h2>
       <ul className='ul-horarios-contacto'>
         <li className='li-horarios-contacto'>7:30hs - 12:00hs</li>
-        <li className='li-horarios-contacto'>15:30hs - 17:55hs</li>
+        <li className='li-horarios-contacto'>13:30hs - 17:55hs</li>
       </ul> 
     </div>
     </section>

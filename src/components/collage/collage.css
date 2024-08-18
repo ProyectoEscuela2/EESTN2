@@ -14,13 +14,13 @@
 
 .Collage img {
 	width: 100%;
-	height: 100%;
+	height:100%;
 	object-fit: cover;
 	object-position: center;
 }
 
 .limitado {
-	grid-auto-rows: 1fr;
+	grid-auto-rows:fit-content;
 	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 

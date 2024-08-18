@@ -86,7 +86,7 @@
 
 .flex-aling-center button{
 
-    color: white;
+    color: var(--color-primario-oscuro);
     background-color: transparent;
     border: none;
     outline: none;
@@ -95,6 +95,7 @@
     font-size: 22px;
     text-decoration: none;
     cursor: pointer;
+    margin-top: 10px;
 
 }
 
