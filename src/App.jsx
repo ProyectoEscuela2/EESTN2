@@ -9,6 +9,8 @@ import Contacto from './pages/contacto.jsx';
 import Galeria from './pages/galeria';
 import { createContext, useState } from 'react';
 export const espContexto = createContext(0);
+import Inscribirse from './pages/inscribirse.jsx';
+import Miembros from './pages/miembros.jsx';
 
 function App() {
 
@@ -32,6 +34,8 @@ function App() {
             <Route path='/especialidades' element={<Especialidades />}/>
             <Route path='/contacto' element={<Contacto />}/>
             <Route path="/galeria" element={<Galeria />} />
+            <Route path="/inscribirse" element={<Inscribirse />} />
+            <Route path="/miembros" element={<Miembros />} />
           </Routes>
         <Footer />
       </Router>

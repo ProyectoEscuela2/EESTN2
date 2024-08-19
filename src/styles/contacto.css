@@ -185,3 +185,70 @@
 
   }
 }
+
+.contenedor-redes{
+  border-top: 2px solid black;
+  width: 100%;
+}
+.contacto-redes-ul{
+
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px;
+
+}
+.contacto-redes-li{
+  list-style: none;
+}
+.contacto-redes-icon:hover{
+
+  font-size: 55px;
+  transition: font-size 0.3s ease ;
+
+}
+.contacto-redes-icon{
+  font-size: 50px;
+}
+.facebook-contacto{
+  color: #4267B2;
+}
+.whatsapp-contacto{
+  color: #25D366;
+}
+.linkedin-contacto{
+  color: #0e76a8;
+}
+.github-contacto{
+  color: #333;
+}
+
+.instagram-contacto{
+
+  animation: instagramAnimationCon 3s linear infinite;
+
+}
+
+@keyframes instagramAnimationCon {
+  
+  
+  0%{
+      opacity: 1;
+      color: #405DE6;
+
+  }
+  35%{
+      color: #833AB4;
+  }
+  80%{
+      color: #e22262;
+  }
+  95%{
+      color: #FD1D1D;
+  }
+  100%{
+      opacity: 1;
+      color: #405DE6;
+  }
+
+
+}

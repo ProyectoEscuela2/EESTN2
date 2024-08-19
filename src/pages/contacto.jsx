@@ -3,6 +3,11 @@ import '../styles/contacto.css';
 import { FaPhone } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import Map from '../components/mapa/mapa';
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 
 const InformacionDeContacto = () => {
   return (
@@ -78,6 +83,16 @@ const Contacto = () => {
         <li className='li-horarios-contacto'>7:30hs - 12:00hs</li>
         <li className='li-horarios-contacto'>13:30hs - 17:55hs</li>
       </ul> 
+    </div>
+    <div className="contenedor-redes">
+      <ul className='contacto-redes-ul'>
+        <a href="https://www.facebook.com/profile.php?id=100009423868443"><li className='contacto-redes-li'><FaFacebook className='contacto-redes-icon facebook-contacto'/></li></a>
+        <a href=""><li className='contacto-redes-li'><FaInstagram className='contacto-redes-icon instagram-contacto'/></li></a>
+        <a href=""><li className='contacto-redes-li'><FaWhatsapp className='contacto-redes-icon whatsapp-contacto'/></li></a>
+        <a href="https://www.linkedin.com/school/eestn2/about/"><li className='contacto-redes-li'><FaLinkedin className='contacto-redes-icon linkedin-contacto'/></li></a>
+        <a href="https://github.com/GrupoDAD"><li className='contacto-redes-li'><FaGithub className='contacto-redes-icon github-contacto'/></li></a>
+      
+      </ul>
     </div>
     </section>
   );

@@ -1,6 +1,8 @@
 import "./footer.css"
 // import imagenFooter from "../../assets/logo_escuela.png"
 import imagenFooter from "../../assets/logoesc.svg"
+import { Link } from "react-router-dom"
+
 export function Footer(){
 
     return(
@@ -24,8 +26,8 @@ export function Footer(){
                     </div>
                 </div>
                 <div className="footer_bott">
-                    <h6>2024 | Grupo de desarrollo y ampliacion digital - Desarrollo independiente</h6>
-                    <p>Tadeo Lattanzio, Alejo Molla, Emma Salazar, Ramiro Vega.</p>
+                    <h6>2024 | Grupo de desarrollo y ampliacion digital | Desarrollo independiente</h6>
+                    <Link to="/miembros"><p>Miembros del grupo</p></Link>
                 </div>
          </footer>
         </>

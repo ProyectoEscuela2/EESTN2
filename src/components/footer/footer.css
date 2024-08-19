@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     padding: 3%;
+    flex-wrap: wrap;
 }
 
 .footer_main_img img{
@@ -20,7 +21,6 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    width: 61.8%;
     font-size: 2rem;
     border-top: 2px solid white;
     padding: 20px;
@@ -37,6 +37,8 @@
 .footer_bott p{
     padding: 10px;
     font-size: 1rem;
+    color: white;
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 500px){
@@ -45,5 +47,8 @@
     }
     .footer_bott{
         font-size: 1rem;
+    }
+    .footer_main_img{
+        width: 100%;
     }
 }

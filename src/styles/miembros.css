@@ -1,0 +1,26 @@
+.miembros-2024 h3{
+    padding: 0px;
+}
+.miembros-2024{
+    padding: 0px 50px;
+}
+.miembros-2024 ul{
+
+    padding: 0px 50px;
+}
+.li-miembros{
+    font-size: 1.2rem;
+    color: black;
+    padding: 10px 0px;
+    width: fit-content;
+    text-decoration: underline;
+}
+.li-miembros:hover{
+    font-size: 1.5rem;
+    transition: font-size .5s ease;
+
+}
+.miembros-2024 a{
+    width: fit-content;
+    display: block;
+}

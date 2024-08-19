@@ -1,58 +1,103 @@
 .navbar-pc{
-    display: none;
     text-align: center;
     width: 100%;
     background-color: var(--color-primario-oscuro);
     box-sizing: border-box;
-
-
-}
-.navbar-pc-ul{
-    text-align: center;
-    color: var(--color-primario-claro);
-    width: 50%;
-    margin: 0px;
-    padding: 0px;
-
-}
-li{
-    list-style: none; 
-}
-
-.navbar-pc-li{
-    padding: 7px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    cursor: pointer;
-    margin-right: 2px;
-    transition: background-color 0.7s;
-}
-
-.navbar-a{
-    color: var(--color-primario-claro);
-    text-decoration: none;
-    height: fit-content;
-}
-
-.navbar-pc-li:hover{
-    background-color: #000000;
-}
-.navbar-pc{
     display: flex;
-    justify-content: center;
+    align-items: center;
+    position: sticky;
+}
+.contenedor-imagen{
+    width: 50%;
+    padding-left: 50px;
+    display: flex;
     align-items: center;
 }
+.contImg{
+
+    width: 75px;
+    height: auto;
+    margin: 5px;
+}
+.contImg img{
+    width: 100%;
+    height: auto;
+}
 
 .navbar-pc-ul{
+
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: end;
+}
+.navbar-pc-li{
+    color: white;
+    list-style: none;
+    padding: 25px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.navbar-pc-li:hover{
+    background-color: var(--color-secundario-acromatico);
+}
+.contenedor-navbar-mb{
+    display: none;
+
+}
+.navbar-mb-ul{
+    display: none;     
+    background-color: #393939;
+    z-index: 100000;
 }
 
-.contImg{
-    margin-right: 50px;
+@keyframes expandNav {
+    0%{
+        height: 0px;
+    }
+    100%{
+        height: 295px;
+        opacity: 1;
+    }
+    
 }
-img{
-    height: fit-content;
-    width: 50px;
-    margin: 10px;
+
+@media screen and (max-width: 750px) {
+
+    .contenedor-navbar{
+        display: none;
+    }
+    .contenedor-navbar-mb{
+        display: flex;
+        justify-content: end;
+        width: 50%;
+        padding-right: 20px;
+       
+    }
+    .navbar-mb-btn{
+        cursor: pointer;
+        background-color: transparent;
+        color: white;
+        border:none;
+    }
+    .nv-active{
+        display: block;
+        text-align: right;
+        width: fit-content;
+        position: absolute;
+        right: 0;
+        animation: expandNav 0.7s ease forwards;
+        overflow-y: hidden;
+    }
+    .navbar-mb-li{
+        color: white;
+        list-style: none;
+        padding: 20px 50px;
+        text-align: center;
+    }
+    .navbar-mb-li:active{
+        background-color: var(--color-primario-oscuro);
+    }
+    .contenedor-imagen{
+        padding-left: 10px;
+    }
 }
