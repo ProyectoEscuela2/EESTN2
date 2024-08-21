@@ -1,8 +1,5 @@
 export const MIEMBROS_DATA = [
 
-    //Para agregar alumnos
-    //simplemente se debe agregar mas elementos
-    //a este array siguiendo el mismo formato
     {
         "id":"0",
         "año":"2024",

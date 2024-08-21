@@ -256,7 +256,6 @@
 
 @media screen and (max-width: 500px) {
     .textInicio h1{
-        font-size: 1.5rem;
         margin-top: 15px;
         margin-bottom: 15px;
     }
@@ -279,6 +278,11 @@
 .contNosotros .wrapper .contImg{
     padding: 0px;
 }
+    .textoBlanco{
+        font-size: 0.7rem;
+    }
+
+
 }
 
 .animation3{
@@ -346,3 +350,4 @@ h2{
     line-height: 3rem;
     text-align: center;
 }
+
