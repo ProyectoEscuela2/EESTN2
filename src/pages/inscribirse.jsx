@@ -8,8 +8,10 @@ export default function Inscribirse(){
     
 
     <section className="inscribirse">
-    <h2>Inscribirme</h2>
-    <h3>Requisitos</h3>
+    <h2>Inscripciones</h2>
+    <h3>Las inscripciones están cerradas por ahora, ¡volvé en otro momento!</h3>
+
+    {/* <h3>Requisitos</h3>
     <div className="inscribirse-requisitos">
         {INSCRIPCION_DATA.map((data) => (
 
@@ -19,7 +21,7 @@ export default function Inscribirse(){
             </div>
 
         ))}
-    </div>
+    </div> */}
     </section>
     </>
 

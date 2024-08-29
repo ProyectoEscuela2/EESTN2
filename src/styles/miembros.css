@@ -1,8 +1,8 @@
 .miembros-2024 h3{
-    padding: 0px;
+    padding: 5px;
 }
 .miembros-2024{
-    padding: 0px 50px;
+    padding: 0px 50px 50px;
 }
 .miembros-2024 ul{
 
@@ -23,4 +23,23 @@
 .miembros-2024 a{
     width: fit-content;
     display: block;
+}
+
+.contenedor-miembros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gitHub{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 1rem;
+}
+.gitHub h3{
+    padding: 5px;
 }

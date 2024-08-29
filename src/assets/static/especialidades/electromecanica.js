@@ -2,7 +2,7 @@ export const ELECTRO_DATA = {
     "videoURL": "https://www.youtube.com/embed/L4BNRLsctOE",
     "titulo":"Electromecánica",
     "acercaDeEspecialidad": [ // [Paragraph, Paragraph, ..., Paragraph]
-        "La especialidad de Electromecánica dura 4 años. Esta especialidad abarca "
+        "La especialidad de Electromecánica dura 4 años. Esta especialidad abarca contenidos de Electrotécnia, conocimiento de los materiales, electricidad, electrónica, mecánica entre muchos otros. Como estudiante de esta especialidad"
     ],
     "diseñoCurricularSRC": "https://drive.google.com/file/d/1PIFVO2wrV1WhgcNWNfdbf6q1sO1n2gRr/view",
     "practicasInfo": [

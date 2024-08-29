@@ -90,7 +90,6 @@ const Contacto = () => {
         <a href=""><li className='contacto-redes-li'><FaInstagram className='contacto-redes-icon instagram-contacto'/></li></a>
         <a href=""><li className='contacto-redes-li'><FaWhatsapp className='contacto-redes-icon whatsapp-contacto'/></li></a>
         <a href="https://www.linkedin.com/school/eestn2/about/"><li className='contacto-redes-li'><FaLinkedin className='contacto-redes-icon linkedin-contacto'/></li></a>
-        <a href="https://github.com/GrupoDAD"><li className='contacto-redes-li'><FaGithub className='contacto-redes-icon github-contacto'/></li></a>
       
       </ul>
     </div>

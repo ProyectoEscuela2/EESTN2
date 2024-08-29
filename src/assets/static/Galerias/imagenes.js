@@ -2,27 +2,21 @@ export const IMAGENES = [
     // Informática
     {
         "id": 0,
-        "url": "/imagenes/imagenes/informatica/imagen1.webp",
-        "alt": "Imagen",
-        "especialidad": "Informática"
-    },
-    {
-        "id": 1,
         "url": "/imagenes/imagenes/informatica/imagen2.webp",
         "alt": "Imagen",
         "especialidad": "Informática"
     },
     {
-        "id": 2,
+        "id": 1,
         "url": "/imagenes/imagenes/informatica/imagen3.webp",
         "alt": "Imagen",
         "especialidad": "Informática"
     },
     {
-        "id": 3,
-        "url": "/imagenes/imagenes/informatica/imagen4.webp",
-        "alt": "Imagen",
-        "especialidad": "Informática"
+        // "id": 3,
+        // "url": "/imagenes/imagenes/informatica/imagen4.webp",
+        // "alt": "Imagen",
+        // "especialidad": "Informática"
     },
 
     // Electromecánica
@@ -284,6 +278,12 @@ export const IMAGENES = [
     },{
         "id": 51,
         "url": "/imagenes/imagenes/mmo/imagen12.webp",
+        "alt": "Imagen",
+        "especialidad": "Construcciones"
+    },
+    {
+        "id": 52,
+        "url": "/imagenes/imagenes/mmo/imagen13.webp",
         "alt": "Imagen",
         "especialidad": "Construcciones"
     },
