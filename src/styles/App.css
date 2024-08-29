@@ -172,11 +172,11 @@
     
     from{
         background-color: transparent;
-        background-image: url("https://associationsnow.com/wp-content/uploads/2016/01/0111_javascript.jpg");
+        background-image: url("../../public/imagenes/bg_info.webp");
         opacity: 0;
     }to{
         opacity: 1;
-        background-image: url("https://associationsnow.com/wp-content/uploads/2016/01/0111_javascript.jpg");
+        background-image: url("../../public/imagenes/bg_info.webp");
         background-color: transparent;
 
     }
@@ -200,12 +200,12 @@
 @keyframes aniacionQuimica {
     
     from{
-        background-image: url("https://concepto.de/wp-content/uploads/2014/08/quimica-1-e1589576962905.jpg");
+        background-image: url("../../public/imagenes/bg-quimica.webp");
         background-color: transparent;
         opacity: 0;
     }to{
         opacity: 1;
-        background-image: url("https://concepto.de/wp-content/uploads/2014/08/quimica-1-e1589576962905.jpg");
+        background-image: url("../../public/imagenes/bg-quimica.webp");
         background-color: transparent;
 
     }
@@ -215,12 +215,12 @@
 @keyframes aniacionMmo {
     
     from{
-        background-image: url("https://img.freepik.com/fotos-premium/planos-arquitectonicos-casa-proyecto-arquitectonico-concepto-construccion-dibujos-disenos-tecnicos-ingenieria-mesa-ai-generado_538213-3263.jpg");
+        background-image: url("../../public/imagenes/bg_mmo.webp");
         background-color: transparent;
         opacity: 0;
     }to{
         opacity: 1;
-        background-image: url("https://img.freepik.com/fotos-premium/planos-arquitectonicos-casa-proyecto-arquitectonico-concepto-construccion-dibujos-disenos-tecnicos-ingenieria-mesa-ai-generado_538213-3263.jpg");
+        background-image: url("../../public/imagenes/bg_mmo.webp");
         background-color: transparent;
 
     }
