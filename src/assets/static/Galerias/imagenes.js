@@ -13,6 +13,12 @@ export const IMAGENES = [
         "especialidad": "Informática"
     },
     {
+        // "id": 2,
+        // "url": "/imagenes/imagenes/informatica/imagen4.webp",
+        // "alt": "Imagen",
+        // "especialidad": "Informática"
+    },
+    {
         // "id": 3,
         // "url": "/imagenes/imagenes/informatica/imagen4.webp",
         // "alt": "Imagen",
@@ -287,4 +293,29 @@ export const IMAGENES = [
         "alt": "Imagen",
         "especialidad": "Construcciones"
     },
+
+
+
+
+
+
+    // instalaciones
+    // {
+    //     "id": 53,
+    //     "url": "/imagenes/imagenes/mmo/imagen13.webp",
+    //     "alt": "Imagen",
+    //     "especialidad": "Construcciones"
+    // },
+    // {
+    //     "id": 54,
+    //     "url": "/imagenes/imagenes/mmo/imagen13.webp",
+    //     "alt": "Imagen",
+    //     "especialidad": "Construcciones"
+    // },
+    // {
+    //     "id": 55,
+    //     "url": "/imagenes/imagenes/mmo/imagen13.webp",
+    //     "alt": "Imagen",
+    //     "especialidad": "Construcciones"
+    // },
 ]
