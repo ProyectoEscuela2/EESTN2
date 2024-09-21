@@ -23,7 +23,7 @@ export default function Inscribirse(){
         ))}
     </div>
 
-    <h3>El restos de las inscripciones abrira pronto.</h3>
+    <h3>El resto de las inscripciones abrirá pronto.</h3>
 
 
     </section>

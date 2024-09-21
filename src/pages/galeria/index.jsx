@@ -31,7 +31,7 @@ export default function Galeria() {
 			boton={<BotonVerMas onClick={modificarVerMas} isVerMas={isVerMas} />}
 		>
 			<Collage
-				imagenes={IMAGENES}
+				imagenes={IMAGENES.filter(({ especialidad }) => especialidad === "Instalaciones")}
 				limitado={isVerMas ? "false" : "true"} />
 		</Seccion>
 
@@ -77,7 +77,7 @@ export default function Galeria() {
 			boton={<BotonVerMas onClick={modificarVerMas} isVerMas={isVerMas} />}
 		>
 			<Collage
-				imagenes={IMAGENES}
+				imagenes={IMAGENES.filter(({ especialidad }) => especialidad === "Eventos")}
 				limitado={isVerMas ? "false" : "true"} />
 		</Seccion>
 	</div>

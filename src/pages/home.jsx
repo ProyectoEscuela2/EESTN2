@@ -44,7 +44,7 @@ export default function Home(){
                 </div>
                 <div className="contImg">
                     <Link to="/galeria">
-                        <img src="https://i.postimg.cc/d1rtVT8b/homeImg.webp" alt="imagenHome" />
+                        <img src="\imagenes\imagenes\instalaciones\instalaciones3.webp" alt="imagenHome" />
                     </Link>
                 </div>
             </div>

@@ -21,7 +21,7 @@
     padding: 150px;
     color: var(--color-primario-claro);
     /* background-image: url("https://i.postimg.cc/d1rtVT8b/homeImg.webp"); */
-    background-image: url("../../imagenes/8.webp");
+    background-image: url("../../imagenes/imagenes/instalaciones/instalaciones1.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -270,10 +270,16 @@
         font-size: 15pt;
     }
 
+    .contNosotros .wrapper .contTexto {
+        padding: 0;
+    
+    }
+
 .contNosotros .wrapper .contImg img {
     width: 250px;
     height: 250px;
     border-radius: 100%;
+    margin-top: 20px;
 }
 .contNosotros .wrapper .contImg{
     padding: 0px;

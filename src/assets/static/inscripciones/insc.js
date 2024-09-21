@@ -2,7 +2,7 @@ export const INSCRIPCION_HNOS = [
     
     {
         "id":"0",
-        "title":"Planilla de inscripcion",
+        "title":"Planilla de inscripción",
         "text":"Descargar Archivo",
         "urlDescarga":"/archivos/hermanos/1. PLANILLA DE INSCRIPCIÓN.pdf",
     },
@@ -20,7 +20,7 @@ export const INSCRIPCION_HNOS = [
     },
     {
         "id":"3",
-        "title":"Ficha datos ciclo basico",
+        "title":"Ficha datos ciclo básico",
         "text":"Descargar Archivo",
         "urlDescarga":"/archivos/hermanos/4. FICHA DATOS CICLO BÁSICO 2025.pdf"
     },
@@ -38,17 +38,17 @@ export const INSCRIPCION_HNOS = [
     },
     {
         "id":"6",
-        "title":"Cuadernillo matematica",
+        "title":"Cuadernillo Matemática",
         "text":"Descargar Archivo",
         "urlDescarga":"/archivos/hermanos/Cuadernillo_Matemática_1°año_2025.pdf"
     },{
         "id":"7",
-        "title":"Cuadernillo Ingles",
+        "title":"Cuadernillo Inglés",
         "text":"Descargar Archivo",
         "urlDescarga":"/archivos/hermanos/Cuadernillo_English Booklet_1°año_2025.pdf"
     },{
         "id":"8",
-        "title":"Cuadernillo Practicas del lenguaje",
+        "title":"Cuadernillo Prácticas del lenguaje",
         "text":"Descargar Archivo",
         "urlDescarga":"/archivos/hermanos/Cuadernillo_Prácticas de Lenguaje_1° año_2025.pdf"
     },
