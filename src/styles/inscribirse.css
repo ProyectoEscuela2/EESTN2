@@ -12,6 +12,10 @@ h3{
 
     text-align: center;
 }
+
+p{
+    padding: 2rem;
+}
 .inscribirse-contenedor h4{
     font-size: 2rem;
 }
