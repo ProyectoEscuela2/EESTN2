@@ -4,53 +4,62 @@ export const INSCRIPCION_HNOS = [
         "id":"0",
         "title":"Planilla de inscripción",
         "text":"Descargar Archivo",
-        "urlDescarga":"../archivos/hermanos/1. PLANILLA DE INSCRIPCIÓN.pdf",
+        "urlDescarga":"/archivos/hermanos/1. PLANILLA DE INSCRIPCIÓN.pdf",
+        "name":"Planilla de inscripcion.pdf"
     },
     {
         "id":"1",
         "title":"Acta compromiso",
         "text":"Descargar Archivo",
-        "urlDescarga":"/archivos/hermanos/2.ACTA COMPROMISO DEL ESTABLECIMIENTO 1 AÑO 2025.pdf"
+        "urlDescarga":"/archivos/hermanos/ACTA_COMPROMISO.pdf",
+        "name":"Acta compromiso.pdf"
     },    
     {
         "id":"2",
         "title":"Anexo vestimenta",
         "text":"Descargar Archivo",
-        "urlDescarga":"/archivos/hermanos/3.ANEXO VESTIMENTA 2025.pdf"
+        "urlDescarga":"/archivos/hermanos/VESTIMENTA.pdf",
+        "name":"Anexo vestimenta.pdf"
     },
     {
         "id":"3",
         "title":"Ficha datos ciclo básico",
         "text":"Descargar Archivo",
-        "urlDescarga":"/archivos/hermanos/4.FICHA DATOS CICLO BÁSICO 2025.pdf"
+        "urlDescarga":"/archivos/hermanos/FICHA_DE_DATOS_CICLO_BASICO.pdf",
+        "name":"Ficha de datos ciclo basico.pdf"
     },
     {
         "id":"4",
         "title":"Autorizaciones salidas y uso de imagen",
         "text":"Descargar Archivo",
-        "urlDescarga":"/archivos/hermanos/5.AUTORIZACIÓN SALIDA- ACTA USO DE IMAGEN 2025.pdf"
+        "urlDescarga":"/archivos/hermanos/USO_IMAGEN.pdf",
+        "name": "Autorizaciones salidas y uso de imagen"
     },
     {
         "id":"5",
         "title":"Acuerdo institucional de convivencia",
         "text":"Descargar Archivo",
-        "urlDescarga":"/archivos/hermanos/6. ACUERDO INSTITUCIONAL DE CONVIVENCIA.pdf"
+        "urlDescarga":"/archivos/hermanos/6. ACUERDO INSTITUCIONAL DE CONVIVENCIA.pdf",
+        "name": "Acuerdo institucional de convivencia"
     },
     {
         "id":"6",
         "title":"Cuadernillo Matemática",
         "text":"Descargar Archivo",
-        "urlDescarga":"/archivos/hermanos/Cuadernillo_Matemática_1°año_2025.pdf"
+        "urlDescarga":"/archivos/hermanos/Cuadernillo_Matemática_1°año_2025.pdf",
+        "name": "Cuadernillo Matemática"
     },{
         "id":"7",
         "title":"Cuadernillo Inglés",
         "text":"Descargar Archivo",
-        "urlDescarga":"/archivos/hermanos/Cuadernillo_English Booklet_1°año_2025.pdf"
+        "urlDescarga":"/archivos/hermanos/Cuadernillo_English Booklet_1°año_2025.pdf",
+        "name": "Cuadernillo Inglés"
     },{
         "id":"8",
         "title":"Cuadernillo Prácticas del lenguaje",
         "text":"Descargar Archivo",
-        "urlDescarga":"/archivos/hermanos/Cuadernillo_Prácticas de Lenguaje_1° año_2025.pdf"
+        "urlDescarga":"/archivos/hermanos/Cuadernillo_Prácticas de Lenguaje_1° año_2025.pdf",
+        "name":"Cuadernillo Prácticas del lenguaje"
     },
 ]
 

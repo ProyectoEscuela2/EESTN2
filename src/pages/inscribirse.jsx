@@ -3,8 +3,7 @@ import "../styles/inscribirse.css"
 export default function Inscribirse(){
 
 
-    console.log()
-    //Para agregar archivos hay que modificar el archivo en static/inscripciones/insc.js
+
     return<>
     
 
@@ -17,7 +16,7 @@ export default function Inscribirse(){
         {INSCRIPCION_HNOS.map((data) => (
             <div key={data.id} className="inscribirse-contenedor">
                 <h4>{data.title}</h4>
-                <a href={data.urlDescarga} download={data.urlDescarga}><button>{data.text}</button></a>
+                <a href={data.urlDescarga} download={data.name}><button>{data.text}</button></a>
             </div>
 
         ))}
