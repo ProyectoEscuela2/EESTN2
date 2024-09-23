@@ -62,10 +62,14 @@ const Contacto = () => {
           <p>Avenida Moreno 79, San Nicolás de los Arroyos</p>
         </li>
         <li className='alinear-contacto'>
-          {/* <span>Teléfono:</span>
-            +54 3364-110-849
-          <span className="telefono-estatico"><FaPhone /></span> */}
+          <span>Telefonos:</span>
+          4423500
+          <span className="telefono-estatico"><FaPhone /></span>
         </li>
+        <li><span></span>
+          4424431
+          <span className="telefono-estatico"><FaPhone /></span>
+          </li>
         <li>
           <button className='contacto-mail-btn' onClick={openMailClient}>Envíanos un mail</button>
         </li>

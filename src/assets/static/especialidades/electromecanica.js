@@ -2,7 +2,7 @@ export const ELECTRO_DATA = {
     "videoURL": "https://www.youtube.com/embed/L4BNRLsctOE",
     "titulo":"Electromecánica",
     "acercaDeEspecialidad": [ // [Paragraph, Paragraph, ..., Paragraph]
-        "La especialidad de Electromecánica dura 4 años. Esta especialidad abarca contenidos de Electrotécnia, conocimiento de los materiales, electricidad, electrónica, mecánica entre muchos otros. Como estudiante de esta especialidad"
+        "La especialidad de Electromecánica dura 4 años. Esta especialidad abarca contenidos de Electrotécnia, conocimiento de los materiales, electricidad, electrónica y mecánica entre muchos otros. En la escuela técnica número dos, formamos técnicos electromecánicos profesionales en un ambiente de amistad y respeto, promoviendo el desarrollo territorial y el crecimiento socio-productivo con innovación tecnológica. Ofrecemos prácticas profesionalizantes para consolidar y expandir conocimientos, preparando a los estudiantes para ser técnicos eficientes y proactivos en la resolución de problemas. Exalumnos destacan la adquisición de herramientas y habilidades valiosas para su desarrollo profesional y personal."
     ],
     "diseñoCurricularSRC": "https://drive.google.com/file/d/1PIFVO2wrV1WhgcNWNfdbf6q1sO1n2gRr/view",
     "practicasInfo": [
