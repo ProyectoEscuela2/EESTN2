@@ -4,31 +4,31 @@ export const INSCRIPCION_HNOS = [
         "id":"0",
         "title":"Planilla de inscripción",
         "text":"Descargar Archivo",
-        "urlDescarga":"/archivos/hermanos/1. PLANILLA DE INSCRIPCIÓN.pdf",
+        "urlDescarga":"../archivos/hermanos/1. PLANILLA DE INSCRIPCIÓN.pdf",
     },
     {
         "id":"1",
         "title":"Acta compromiso",
         "text":"Descargar Archivo",
-        "urlDescarga":"/archivos/hermanos/2. ACTA COMPROMISO DEL ESTABLECIMIENTO 1 AÑO 2025.pdf"
+        "urlDescarga":"/archivos/hermanos/2.ACTA COMPROMISO DEL ESTABLECIMIENTO 1 AÑO 2025.pdf"
     },    
     {
         "id":"2",
         "title":"Anexo vestimenta",
         "text":"Descargar Archivo",
-        "urlDescarga":"/archivos/hermanos/3. ANEXO VESTIMENTA 2025.pdf"
+        "urlDescarga":"/archivos/hermanos/3.ANEXO VESTIMENTA 2025.pdf"
     },
     {
         "id":"3",
         "title":"Ficha datos ciclo básico",
         "text":"Descargar Archivo",
-        "urlDescarga":"/archivos/hermanos/4. FICHA DATOS CICLO BÁSICO 2025.pdf"
+        "urlDescarga":"/archivos/hermanos/4.FICHA DATOS CICLO BÁSICO 2025.pdf"
     },
     {
         "id":"4",
         "title":"Autorizaciones salidas y uso de imagen",
         "text":"Descargar Archivo",
-        "urlDescarga":"/archivos/hermanos/5. AUTORIZACIÓN SALIDA- ACTA USO DE IMAGEN 2025.pdf"
+        "urlDescarga":"/archivos/hermanos/5.AUTORIZACIÓN SALIDA- ACTA USO DE IMAGEN 2025.pdf"
     },
     {
         "id":"5",

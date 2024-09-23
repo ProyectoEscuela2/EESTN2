@@ -17,7 +17,7 @@ export default function Inscribirse(){
         {INSCRIPCION_HNOS.map((data) => (
             <div key={data.id} className="inscribirse-contenedor">
                 <h4>{data.title}</h4>
-                <a href={data.urlDescarga}><button>{data.text}</button></a>
+                <a href={data.urlDescarga} download={data.urlDescarga}><button>{data.text}</button></a>
             </div>
 
         ))}

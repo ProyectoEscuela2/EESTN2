@@ -78,7 +78,6 @@ const Contacto = () => {
     <div className="contenedor-mapa-contacto">
 
       <Map className="mapa-contacto"/>
-
     </div>
     </div>
     <div className="contenedor-horarios-contacto">
