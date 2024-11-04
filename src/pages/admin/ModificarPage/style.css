@@ -1,0 +1,31 @@
+.contenedorEditar{
+    width: 75vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(218, 218, 218);
+}
+
+.editar{
+    width: 90%;
+    background-color: var(--background);
+}
+
+.editarTitulo{
+    background-color: var(--text);
+    color: var(--background);
+    padding: 15px 20px;
+}
+
+.editarContenedorTabla{
+    padding: 20px;
+    overflow-y: scroll;
+    height: 80vh;
+}
+
+@media screen and (max-width: 700px) {
+    .contenedorEditar{
+        width: 100vw;
+    }
+}

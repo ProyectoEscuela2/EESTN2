@@ -1,27 +1,32 @@
+// Generales
 import { useState, useEffect } from "react";
-import { CarruselTriple } from '../../components/carruseles/carrusel.jsx';
-import { Seccion, BotonVerMas } from "../../components/seccion/seccion.jsx";
-import Collage from "../../components/collage";
-import { IMAGENES } from "../../assets/static/Galerias/imagenes.js";
-import './galeria.css';
+// Componentes
+import { CarruselTriple, ContenedorCarrusel } from '@/components/carruseles/carrusel.jsx';
+import { Seccion, BotonVerMas } from "@/components/seccion/seccion.jsx";
+import Collage from "@/components/collage/index.jsx";
+// Archivos estáticos
+import { IMAGENES } from "@/assets/static/Galerias/imagenes.js";
+// Estilos
+import './style.css';
 
-export default function Galeria() {
+export default function GaleriaPage() {
+	// Estados
 	const [isVerMas, setVerMas] = useState(false);
     const [viewport, setViewport] = useState(window.innerWidth)
 	const modificarVerMas = () => setVerMas(!isVerMas);
 
-
+	// Devuelve el view a la parte superior de la página. Sirve para cuando scrolleamos en otra ruta y cambiamos de página
 	useEffect(() => {
-
         window.scrollTo(0,0)
-
     },[])
 
-	return <div className={`Galeria`}>
+	return <div className="Galeria">
 		<h2>Galería</h2>
 		{/* Carousel */}
 		<div className="Galeria__Carousel">
-			<CarruselTriple tamañoGrupos={viewport > 900 ? "3" : "1"} imagenesList={IMAGENES} />
+			<ContenedorCarrusel>
+				<CarruselTriple tamañoGrupos={viewport > 900 ? "3" : "1"} imagenesList={IMAGENES} />
+			</ContenedorCarrusel>
 		</div>
 
 		{/* Sección: Instalaciones */}
@@ -32,7 +37,8 @@ export default function Galeria() {
 		>
 			<Collage
 				imagenes={IMAGENES.filter(({ especialidad }) => especialidad === "Instalaciones")}
-				limitado={isVerMas ? "false" : "true"} />
+				limitado={isVerMas ? "false" : "true"}
+			/>
 		</Seccion>
 
 

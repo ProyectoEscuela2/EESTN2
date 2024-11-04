@@ -1,0 +1,42 @@
+Situación: Se creó la parte de administración en la página web.
+Problemática: Se creó en otro proyecto y en Next, tecnología incompatible con el servidor.
+Solución: Migrar de Next a Vite.
+
+Tareas:
+    || Cambiar Router por CreateBrowserRouter.
+    || Colocar las "Pages" en carpetas con sus respectivos archivos css.
+        || Reemplazar nombres por "index.jsx".
+    || Comentar e indentar código.
+        || Pages.
+        || Componentes:
+            || IconList
+                - Reemplazar nombre por "index.jsx".
+                || style.css
+            || CarruselTriple.
+                - Reemplazar nombre por "index.jsx".
+                || style.css
+    || Reemplazar "../" por alias: "@".
+        || Pages.
+        - Componentes
+            || Lista.
+            || CarruselTriple
+            || Navbar.
+        - Assets
+    - Corregir error de Keys en lista
+        || Componente Lista.
+        || Componente CarruselTriple.
+        - Página Miembros.
+    || Corregir enlaces de Navbar.
+        - Inscribirse -> Inscripciones
+    - Migrar páginas "Admin"
+        || Admin
+            || Css
+        || archivos
+            || Css
+        - Galeria
+    - Agregar Autenticación.
+    - Conexión Back y Front.
+    
+Tareas secundarias:
+    - Esqueleto para videos de YouTube. Así cuando cargan, se muestra el esqueleto.
+    - Hacer que las imagenes del CarruselTriple sean del mismo tamaño. Eso se consigue fácil modificando la estructura y haciendo que la imagen tenga un object-fit cover

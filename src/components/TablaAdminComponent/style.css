@@ -1,0 +1,86 @@
+.contenedorTabla {
+    background-color: rgb(196, 196, 196);
+    padding: 15px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+.tablaTitulo {
+    text-align: center;
+    padding: 20px 0px;
+    border-bottom: 2px solid black;
+}
+
+.tablaCuerpo {
+    display: flex;
+    padding: 20px 0px;
+}
+
+.tablaDesc {
+    width: 50%;
+    font-size: 15px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid black;
+}
+
+.tablaFecha {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid black;
+    font-size: 20px;
+}
+
+.tablaAside {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tablaBoton {
+    margin: 5px;
+    text-align: center;
+}
+
+.tablaBoton button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--text);
+    transition: color 0.5s ease;
+}
+
+.tablaBoton button:hover {
+    color: var(--accent);
+}
+
+@media screen and (max-width: 875px) {
+    .tablaCuerpo {
+        flex-wrap: wrap;
+    }
+    
+    .tablaDesc {
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px solid black;
+    }
+    
+    .tablaFecha {
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px solid black;
+        padding: 10px 0px;
+        
+    }
+
+    .tablaAside {
+        width: 100%;
+        gap: 100px;
+        margin-top: 20px;
+    }
+}

@@ -90,3 +90,19 @@
         width: 100%;
     }
 }
+
+.alinear{
+
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.contCarrousel{
+
+    padding: 2vw;
+    width: 80vw;
+    height: min-content;
+
+}

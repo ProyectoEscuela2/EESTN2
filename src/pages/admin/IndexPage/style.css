@@ -1,0 +1,42 @@
+.contenedorBotonesSec{
+    display: flex;
+    padding: 100px;
+    justify-content: center;
+    align-items:center;
+    gap: 20px;
+    width: 60vw;
+}
+
+.contenedorSeccion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.BotonSec{
+    background-color: var(--text);
+    color: var(--background);
+    padding: 20px 70px;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 5px solid var(--text);
+}
+
+.BotonSec:hover{
+    background-color:#373838;
+}
+
+@media screen and (max-width: 700px) {
+    .contenedorBotonesSec{
+        padding: 30px;
+        flex-wrap: wrap;
+    }
+
+    .contenedorSeccion{
+        width: 100vw;
+        height: auto;
+    }
+}

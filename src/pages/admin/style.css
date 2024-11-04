@@ -1,0 +1,27 @@
+:root {
+    --text: #161818;
+    --background: #e7ecef;    
+    --primary: #304d5f;    
+    --secondary: #8ebed7;    
+    --accent: #2b83b6;   
+}
+
+.cuerpo * {
+    padding: 0px;
+    margin: 0px;
+    font-family: monospace;
+    list-style: none;
+    text-decoration: none;
+}
+
+.cuerpo {
+    display: flex;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+@media screen and (max-width: 700px) {
+    .cuerpo {
+        flex-wrap: wrap;
+    }
+}
