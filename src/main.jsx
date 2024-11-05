@@ -6,6 +6,9 @@ import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 // Estilos
 import './index.css';
 
+// Context
+import { AuthProvider } from './context/AuthContext';
+
 // Pages
 import RootPage from '@/pages/RootPage';
 import IndexPage from '@/pages/IndexPage';
@@ -20,6 +23,7 @@ import MiembrosPage from '@/pages/MiembrosPage';
 import AdminPage from '@/pages/admin';
 import AdminIndexPage from '@/pages/admin/IndexPage';
 import AdminLoginPage from '@/pages/admin/LoginPage';
+import AdminLogoutPage from '@/pages/admin/LogoutPage';
 import AdminAgregarPage from '@/pages/admin/AgregarPage';
 import AdminModificarPage from '@/pages/admin/ModificarPage';
 import AdminEditarPage, { loader as adminEditLoader } from '@/pages/admin/ModificarPage/EditarPage';
@@ -95,11 +99,18 @@ const router = createBrowserRouter([
     {
         path: "login",
         element: <AdminLoginPage />,
+        // action: loginAction,
     },
+    {
+        path: "logout",
+        element: <AdminLogoutPage />
+    }
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        <RouterProvider router={router} />
+        <AuthProvider>
+            <RouterProvider router={router} />
+        </AuthProvider>
     </React.StrictMode>,
 );

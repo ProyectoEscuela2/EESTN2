@@ -35,6 +35,8 @@ Tareas:
             || Css
         - Galeria
     - Agregar Autenticación.
+        || Login y Auth (context).
+        - Usar bycript para encriptar la contraseña y que no esté regalada
     - Conexión Back y Front.
     
 Tareas secundarias:

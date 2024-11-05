@@ -1,0 +1,16 @@
+GDAD24-T100INFOSEC
+
+Desglose de la clave:
+    - GDAD: Hace referencia al grupo que desarrolló la página, lo cual facilita la asociación.
+    - 24: Año 2024, celebrando el centenario de la escuela.
+    - T100: "T" de técnica y "100" por los 100 años de continuidad educativa.
+    - INFO: Relacionado a la especialidad de informática, que administra la página.
+    - SEC: Alude a la seguridad (de "security") y a la secundaria técnica, dándole un toque de identidad.
+
+Según Kaspersky (https://password.kaspersky.com/es/):
+    ¡Buena contraseña!
+    - Tu contraseña es resistente al pirateo.
+    - Tu contraseña no aparece en ninguna base de datos de contraseñas filtradas.
+    - Tu contraseña puede ser descifrada con un ordenador común en 10000+ siglos
+
+Por el momento (04-11-2024) la contraseña estará en config/config.js, pero la idea es usar una librería como bycript para encriptar la contraseña y guardarla en la base de datos, o configurar el servidor de la escuela para ingresar la contraseña como variable de entorno.
