@@ -1,7 +1,5 @@
 // General
 import { useRef } from "react";
-// Variables
-import { AUTH_PASSWORD } from "@/config/config";
 // Authentication
 import { useAuth } from "@/context/AuthContext"
 import { Navigate, useNavigate } from "react-router-dom"
@@ -18,11 +16,31 @@ export default function AdminLoginPage() {
     const navigate = useNavigate();
 
     // Login
-    const handleLogin = (event) => {
+    const handleLogin = async (event) => {
         event.preventDefault();
-        const user_passwd = elementRef.current.value
         
-        if (AUTH_PASSWORD === user_passwd) {
+        // Validación de la contraseña
+        async function fetchValidate() {
+            const res = await fetch("http://localhost:8000/login", {
+                method: "POST",
+                mode: "cors", // Permite Cross Origins
+                body: JSON.stringify({
+                    "password": `${user_passwd}` 
+                }),
+                headers: {
+                  "Content-Type": "application/json",
+                },
+              });
+            
+            const data = await res.json();
+            // console.log(data)
+            return data.success || data.detail; // Devuelve true o "Contraseña incorrecta" junto con un 401 unauthorized
+        }
+
+        const es_valida = await fetchValidate();
+        // console.log(es_valida)
+        
+        if (es_valida == true) {
             login();
             navigate("/admin");
         }

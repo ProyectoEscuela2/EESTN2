@@ -1,1 +1,0 @@
-export const AUTH_PASSWORD = "GDAD24-T100INFOSEC";
