@@ -18,6 +18,7 @@ export default function AdminLoginPage() {
     // Login
     const handleLogin = async (event) => {
         event.preventDefault();
+        const user_passwd = elementRef.current.value
         
         // Validación de la contraseña
         async function fetchValidate() {

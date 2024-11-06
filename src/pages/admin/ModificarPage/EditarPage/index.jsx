@@ -1,46 +1,90 @@
-import { useLoaderData } from "react-router";
+// General
+import { useLoaderData, Form, redirect } from "react-router-dom";
 
 export async function loader({ params }) {
     const { id } = params;
+    const res = await fetch(`http://localhost:8000/archivos/${id}`);
+    const { data } = await res.json();
 
-    // Obtener datos del archivo desde la db
+    return data[0] || null;
+}
 
-    return id;
+/*
+    cuando se envía la petició put se da el siguiente error:
+    type: missing,
+    loc: ["body", "nombre"]
+    msg: "Field required",
+    input: null
+*/
+
+export async function action({ request, params }) {
+    const { id } = params;
+    const formData = await request.formData();
+    
+    // Función para modificar el archivo
+    await fetch(`http://localhost:8000/archivos/${id}`, {
+        method: "PUT",
+        body: formData
+    });
+
+    return redirect("/admin/modificar");
 }
 
 export default function AdminEditarPage() {
-    const id = useLoaderData();
-    console.log(id);
+    const archivo = useLoaderData();
+    console.log(archivo);
 
     return <section>
         <div className="contenedorAnadir">
             <div className="anadir">
                 <div className="anadirTitulo">
-                    <h1>Añadir archivo</h1>
+                    <h1>Editar archivo</h1>
                 </div>
                 
                 <div className="anadirInputs">
                     {/* TODO: Action -> Modificar archivo */}
-                    <form action="" method="post">
+                    <Form method="put">
                         {/* Los inputs se van a rellenar con los datos del archivo */}
                         <label htmlFor="anadirInput0">Ingresar Nombre</label>
                         <br />
-                        <input type="text" name="" id="anadirInput0" />
+                        <input
+                            type="text"
+                            name="nombre"
+                            id="anadirInput0"
+                            defaultValue={archivo.nombre}
+                        />
                         <br />
                         <label htmlFor="anadirInput1">Ingresar descripcion</label>
                         <br />
-                        <textarea placeholder="max. 250 caracteres" maxLength="250" rows="5" cols="40" name="" id="anadirInput1"></textarea>
+                        <textarea
+                            placeholder="max. 250 caracteres"
+                            maxLength="250"
+                            rows="5"
+                            cols="40"
+                            name="descripcion"
+                            id="anadirInput1"
+                            defaultValue={archivo.descripcion}
+                        ></textarea>
                         <br />
                         <label htmlFor="anaidrInput2">Estado del archivo:</label>
                         <br />
-                        <select id="anaidrInput2" style={{marginBottom: "15px", fontSize: "1.6em", padding: "0 5px"}}>
+                        <select
+                            id="anaidrInput2"
+                            style={{
+                                marginBottom: "15px",
+                                fontSize: "1.6em",
+                                padding: "0 5px"
+                            }}
+                            name="activo"
+                            defaultValue={archivo.activo}
+                        >
                             <option value="1">Activo</option>
                             <option value="0">Inactivo</option>
                         </select>
                         <br />
 
                         <button type="submit">Confirmar cambios</button>
-                    </form>
+                    </Form>
                 </div>
             </div>
         </div>

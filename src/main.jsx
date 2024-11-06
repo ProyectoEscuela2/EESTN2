@@ -24,10 +24,10 @@ import AdminPage from '@/pages/admin';
 import AdminIndexPage from '@/pages/admin/IndexPage';
 import AdminLoginPage from '@/pages/admin/LoginPage';
 import AdminLogoutPage from '@/pages/admin/LogoutPage';
-import AdminAgregarPage from '@/pages/admin/AgregarPage';
-import AdminModificarPage from '@/pages/admin/ModificarPage';
-import AdminEditarPage, { loader as adminEditLoader } from '@/pages/admin/ModificarPage/EditarPage';
-import { action as destroyAction } from '@/pages/admin/ModificarPage/DestroyPage/DestroyPage';
+import AdminAgregarPage, { action as adminAgregarAction } from '@/pages/admin/AgregarPage';
+import AdminModificarPage, {loader as adminModificarLoader} from '@/pages/admin/ModificarPage';
+import AdminEditarPage, { loader as adminEditLoader, action as adminEditAction } from '@/pages/admin/ModificarPage/EditarPage';
+import AdminDestroyPage, { action as destroyAction } from '@/pages/admin/ModificarPage/DestroyPage/DestroyPage';
 
 // Crear enrutador
 const router = createBrowserRouter([
@@ -74,6 +74,7 @@ const router = createBrowserRouter([
             {
                 path: "agregar",
                 element: <AdminAgregarPage />,
+                action: adminAgregarAction,
             },
             {
                 path: "modificar",
@@ -81,15 +82,18 @@ const router = createBrowserRouter([
                 children: [
                     {
                         index: true,
-                        element: <AdminModificarPage />
+                        element: <AdminModificarPage />,
+                        loader: adminModificarLoader
                     },
                     {
                         path: "editar/:id",
                         element: <AdminEditarPage />,
-                        loader: adminEditLoader
+                        loader: adminEditLoader,
+                        action: adminEditAction
                     },
                     {
                         path: "destroy/:id",
+                        element: <AdminDestroyPage />,
                         action: destroyAction,
                     }
                 ],
