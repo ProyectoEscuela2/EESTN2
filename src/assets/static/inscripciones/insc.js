@@ -4,7 +4,7 @@ export const INSCRIPCION_HNOS = [
         "id":"0",
         "title":"Planilla de inscripción",
         "text":"Descargar Archivo",
-        "urlDescarga":"/archivos/hermanos/1. PLANILLA DE INSCRIPCIÓN.pdf",
+        "urlDescarga":"/archivos/hermanos/PLANILLA_DE_INSCRIPCION.pdf",
         "name":"Planilla de inscripcion.pdf"
     },
     {
@@ -39,26 +39,26 @@ export const INSCRIPCION_HNOS = [
         "id":"5",
         "title":"Acuerdo institucional de convivencia",
         "text":"Descargar Archivo",
-        "urlDescarga":"/archivos/hermanos/6. ACUERDO INSTITUCIONAL DE CONVIVENCIA.pdf",
+        "urlDescarga":"/archivos/hermanos/ACUERDO_CONVIVENCIA.pdf",
         "name": "Acuerdo institucional de convivencia"
     },
     {
         "id":"6",
         "title":"Cuadernillo Matemática",
         "text":"Descargar Archivo",
-        "urlDescarga":"/archivos/hermanos/Cuadernillo_Matemática_1°año_2025.pdf",
+        "urlDescarga":"/archivos/hermanos/CUADERNILLO_MATEMATICA.pdf",
         "name": "Cuadernillo Matemática"
     },{
         "id":"7",
         "title":"Cuadernillo Inglés",
         "text":"Descargar Archivo",
-        "urlDescarga":"/archivos/hermanos/Cuadernillo_English Booklet_1°año_2025.pdf",
+        "urlDescarga":"/archivos/hermanos/CUADERNILLO_INGLES.pdf",
         "name": "Cuadernillo Inglés"
     },{
         "id":"8",
         "title":"Cuadernillo Prácticas del lenguaje",
         "text":"Descargar Archivo",
-        "urlDescarga":"/archivos/hermanos/Cuadernillo_Prácticas de Lenguaje_1° año_2025.pdf",
+        "urlDescarga":"/archivos/hermanos/CUADERNILLO_LENGUAJE.pdf",
         "name":"Cuadernillo Prácticas del lenguaje"
     },
 ]

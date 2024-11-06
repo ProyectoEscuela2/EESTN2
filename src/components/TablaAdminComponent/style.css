@@ -3,6 +3,7 @@
     padding: 15px;
     border-radius: 20px;
     border: 2px solid black;
+    margin-bottom: 5px;
 }
 
 .tablaTitulo {
@@ -29,10 +30,10 @@
 .tablaFecha {
     width: 25%;
     display: flex;
-    justify-content: center;
     align-items: center;
     border-right: 2px solid black;
     font-size: 20px;
+    text-align: center;
 }
 
 .tablaAside {
@@ -45,8 +46,12 @@
 .tablaBoton {
     margin: 5px;
     text-align: center;
-}
 
+}
+.tablaBoton a{
+    color: var(--accent);
+
+}
 .tablaBoton button {
     background-color: transparent;
     border: none;

@@ -16,7 +16,7 @@ export default function NavbarAdmin() {
                     <Link to="/admin"><li>Inicio</li></Link>
                     <Link to="/admin/agregar"><li>Agregar</li></Link>
                     <Link to="/admin/modificar"><li>Modificar</li></Link>
-                    <Link to="/logout"><li style={{fontSize: ".8em"}}>Cerrar Sesión</li></Link>
+                    <Link to="/logout"><li>Cerrar Sesión</li></Link>
                 </ul>
             </div>
         </aside>
