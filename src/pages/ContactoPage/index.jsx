@@ -43,6 +43,30 @@ const InformacionDeContacto = () => {
 };
 */
 
+export function FormMail(){
+    return(
+        <>
+        <h1>Enviános un Correo</h1>
+        <form id="#" className="#" method="#" role="form">
+            <label htmlFor="nombre">Nombre</label>
+            <input type="text" placeholder="" className="" name="nombre" id="nombre" required />
+            <label htmlFor="email">Correo Electrónico</label>
+            <input type="email" placeholder="" className="" name="email" id="email" required />
+            <label htmlFor="asunto">Asunto</label>
+            <input type="text" placeholder="" className="" name="asunto" id="asunto" required />
+            <label htmlFor="mensaje">Mensaje</label>
+            <textarea rows="6" placeholder="" className="" name="mensaje"id="mensaje" required></textarea>    
+            <input type="submit" id="" className="btn" value="Enviar Correo" />
+        </form>
+        </>
+    )
+}
+
+
+
+
+
+
 const ContactoPage = () => {
     function openMailClient() {
         window.location.href = 'mailto:tecnica2sannicolas@abc.gob.ar';
@@ -70,7 +94,8 @@ const ContactoPage = () => {
                         <span className="telefono-estatico"><FaPhone /></span>
                     </li>
                     <li>
-                        <button className='contacto-mail-btn' onClick={openMailClient}>Envíanos un mail</button>
+                        {/* <button className='contacto-mail-btn' onClick={openMailClient}>Envíanos un mail</button> */}
+                        <FormMail />
                     </li>
                 </ul>
             </div>
@@ -100,6 +125,13 @@ const ContactoPage = () => {
             </ul>
         </div>
     </section>
+
+    
 };
 
 export default ContactoPage;
+
+
+
+
+
