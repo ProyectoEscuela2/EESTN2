@@ -6,6 +6,7 @@ import { Seccion } from "@/components/seccion/seccion";
 import {CarruselTriple, ContenedorCarrusel} from "@/components/carruseles/carrusel";
 import '@/components/iconList/lista' // Dudoso
 import { Lista } from '@/components/iconList/lista';
+import { Modal} from '../../components/modal/modal';
 // Archivos Estáticos
 import { HOME_DATA } from '@/assets/static/home/home';
 import { IMAGENES } from "@/assets/static/Galerias/imagenes";
@@ -23,6 +24,8 @@ export default function IndexPage(){
     const {espActiveContx, handleEsp} = useContext(espContexto)
 
     return <>
+        {/* modal */}
+        <Modal />
         {/* Inicio */}
         <div className="contInicio">
             <div className="gradient"></div>
