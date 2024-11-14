@@ -25,7 +25,7 @@ export default function IndexPage(){
 
     return <>
         {/* modal */}
-        <Modal />
+        {/* <Modal /> */}
         {/* Inicio */}
         <div className="contInicio">
             <div className="gradient"></div>
