@@ -35,7 +35,7 @@ export default function TablaAdmin({id, nombre, descripcion, fecha_creacion}) {
             <div className="tablaAside">
                 <div className="tablaBoton">
                     <Link to={`/admin/modificar/editar/${id}`}>
-                        <FaEdit size={35} />
+                    <FaEdit size={35} />
                     </Link>
                 </div>
                 <div className="tablaBoton">

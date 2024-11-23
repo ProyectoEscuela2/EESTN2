@@ -1,0 +1,61 @@
+.contenedor-admin-galeria{
+    width: 45%;
+    overflow: hidden;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.admin-galeria-alt{
+    font-size: 30px;
+    padding: 20px 20px;
+    width: 100%;
+    background-color: var(--color-primario-oscuro);
+    color: var(--color-primario-claro);
+    text-align: left;
+    overflow: scroll;
+}
+
+.imagen-admin-galeria{
+    width: 100%;
+    border: 2px solid black;
+}
+
+.funcionesImagenes{
+    display: flex;
+    align-items: center;
+    padding: 20px 0px;
+}
+.admin-galeria-fecha{
+    width: 70%;
+    font-size: 24px;
+    border-right: 2px solid black;
+}
+.admin-galeria-buttons{
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0px 30px;
+}
+.botonEditar{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+    cursor: pointer;
+}
+.botonEditar:hover{
+    color: rgb(0, 183, 255);
+}
+.botonEditar:active{
+    color: var(--color-secundario-brillante);
+}
+.eliminar:hover{
+    color: red;
+}
+.eliminar:active{
+    color: rgb(173, 0, 0);
+}
