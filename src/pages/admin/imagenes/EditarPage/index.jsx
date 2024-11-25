@@ -1,13 +1,12 @@
-import "../style.css";
 import "./styles.css";
 
 import { useState } from "react";
 
-import Galeria from "../../../../components/GaleriaAdminComponent";
+import Galeria from "@/components/GaleriaAdminComponent";
 
 //MUY IMPORTANTE ACORDARSE DE BORRAR LA CARPETA /borrarLuego DE /public/imagenes ANTES DE SUBIR LA PAGINA AL SERVIDOR
 
-export default function EditarImagenes(){
+export default function AdminEditarImagenesPage(){
     
     //Esto controla los estilos de los filtros
     const [isActive, changeIsActive] = useState(1)

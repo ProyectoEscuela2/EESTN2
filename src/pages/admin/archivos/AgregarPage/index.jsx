@@ -1,6 +1,7 @@
 // Generales
-import { useEffect, useState } from "react";
-import { Form, redirect, useActionData } from "react-router-dom";
+import { Form, redirect } from "react-router-dom";
+// Personalizados
+import { API_URL } from "@/config/config";
 // Estilos
 import "./style.css";
 
@@ -8,15 +9,15 @@ export async function action({ request }) {
     const formData = await request.formData();
 
     // Petición POST al servidor
-    const res = await fetch("http://localhost:8000/archivos", {
+    const res = await fetch(`${API_URL}/archivos`, {
         method: "POST",
         mode: "cors",
         body: formData,
     });
-    const data = await res.json();
+    const data = await res.json(); // Se almacena por si en un futuro se desea hacer algo con esto
 
     // Retorna el archivo subido
-    return redirect("/admin/modificar");
+    return redirect("/admin/archivos/modificar");
 }
 
 export default function AdminAgregarPage(){

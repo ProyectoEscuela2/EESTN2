@@ -5,6 +5,7 @@ import { useAuth } from "@/context/AuthContext"
 import { Navigate, useNavigate } from "react-router-dom"
 // Estilos
 import "./style.css"
+import { API_URL } from "@/config/config";
 
 export default function AdminLoginPage() {
     // Función para cambiar el estado del contexto AuthProvider
@@ -22,7 +23,7 @@ export default function AdminLoginPage() {
         
         // Validación de la contraseña
         async function fetchValidate() {
-            const res = await fetch("http://localhost:8000/login", {
+            const res = await fetch(`${API_URL}/login`, {
                 method: "POST",
                 mode: "cors", // Permite Cross Origins
                 body: JSON.stringify({

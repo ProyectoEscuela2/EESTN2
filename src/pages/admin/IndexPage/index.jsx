@@ -1,8 +1,8 @@
 // General
 import { Link } from 'react-router-dom'
 // Iconos
-import { FaPlus } from "react-icons/fa";
-import { FaEdit } from "react-icons/fa";
+import { FaFilePdf } from "react-icons/fa";
+import { FaImages } from "react-icons/fa";
 // Estilos
 import "./style.css"
 
@@ -10,17 +10,18 @@ export default function AdminIndexPage() {
     return <section>
         <div className="contenedorSeccion">
             <div className="contenedorBotonesSec">
-                <Link to="/admin/agregar">
+                <Link to="/admin/archivos">
                     <div className="BotonSec">
-                        <FaPlus size={70}/>
-                        <p>Agregar</p>
+                        <FaFilePdf size={70}/>
+                        <p>Archivos</p>
                     </div>
                 </Link>
 
-                <Link to="/admin/modificar">
+                {/* TODO: Modificar url por /admin/imagenes/ */}
+                <Link to="/admin/archivos/modificar">
                     <div className="BotonSec">
-                        <FaEdit size={70}/>
-                        <p>Modificar</p>
+                        <FaImages size={70}/>
+                        <p>Imagenes</p>
                     </div>
                 </Link>
             </div>

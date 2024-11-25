@@ -1,33 +1,27 @@
 // General
 import { useLoaderData, Form, redirect } from "react-router-dom";
+// Personalizados
+import { API_URL } from "@/config/config";
 
 export async function loader({ params }) {
     const { id } = params;
-    const res = await fetch(`http://localhost:8000/archivos/${id}`);
+    const res = await fetch(`${API_URL}/archivos/${id}`);
     const { data } = await res.json();
 
     return data[0] || null;
 }
-
-/*
-    cuando se envía la petició put se da el siguiente error:
-    type: missing,
-    loc: ["body", "nombre"]
-    msg: "Field required",
-    input: null
-*/
 
 export async function action({ request, params }) {
     const { id } = params;
     const formData = await request.formData();
     
     // Función para modificar el archivo
-    await fetch(`http://localhost:8000/archivos/${id}`, {
+    await fetch(`${API_URL}/archivos/${id}`, {
         method: "PUT",
         body: formData
     });
 
-    return redirect("/admin/modificar");
+    return redirect("/admin/archivos/modificar");
 }
 
 export default function AdminEditarPage() {
@@ -42,7 +36,6 @@ export default function AdminEditarPage() {
                 </div>
                 
                 <div className="anadirInputs">
-                    {/* TODO: Action -> Modificar archivo */}
                     <Form method="put">
                         {/* Los inputs se van a rellenar con los datos del archivo */}
                         <label htmlFor="anadirInput0">Ingresar Nombre</label>

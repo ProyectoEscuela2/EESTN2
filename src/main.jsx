@@ -22,12 +22,17 @@ import MiembrosPage from '@/pages/MiembrosPage';
 // Pages: Admin
 import AdminPage from '@/pages/admin';
 import AdminIndexPage from '@/pages/admin/IndexPage';
+// Pages: Admin/Login
 import AdminLoginPage from '@/pages/admin/LoginPage';
 import AdminLogoutPage from '@/pages/admin/LogoutPage';
-import AdminAgregarPage, { action as adminAgregarAction } from '@/pages/admin/AgregarPage';
-import AdminModificarPage, {loader as adminModificarLoader} from '@/pages/admin/ModificarPage';
-import AdminEditarPage, { loader as adminEditLoader, action as adminEditAction } from '@/pages/admin/ModificarPage/EditarPage';
-import AdminDestroyPage, { action as destroyAction } from '@/pages/admin/ModificarPage/DestroyPage/DestroyPage';
+// Pages: Admin/Archivos
+import AdminIndexArchivosPage from '@/pages/admin/archivos';
+import AdminAgregarArchivosPage, { action as adminAgregarArchivoAction } from '@/pages/admin/archivos/AgregarPage';
+import AdminModificarArchivosPage, {loader as adminModificarArchivoLoader} from '@/pages/admin/archivos/ModificarPage';
+import AdminEditarArchivosPage, { loader as adminEditArchivoLoader, action as adminEditArchivoAction } from '@/pages/admin/archivos/ModificarPage/EditarPage';
+import AdminDestroyArchivosPage, { action as destroyArchivoAction } from '@/pages/admin/archivos/ModificarPage/DestroyPage/DestroyPage';
+// Pages: Admin/Imagenes
+import AdminEditarImagenesPage from '@/pages/admin/imagenes/EditarPage';
 
 // Crear enrutador
 const router = createBrowserRouter([
@@ -71,32 +76,52 @@ const router = createBrowserRouter([
                 index: true,
                 element: <AdminIndexPage />,
             },
+            // Admin: Archivos
             {
-                path: "agregar",
-                element: <AdminAgregarPage />,
-                action: adminAgregarAction,
-            },
-            {
-                path: "modificar",
-                element: <Outlet />,
+                path: "archivos",
                 children: [
                     {
                         index: true,
-                        element: <AdminModificarPage />,
-                        loader: adminModificarLoader
+                        element: <AdminIndexArchivosPage />
                     },
                     {
-                        path: "editar/:id",
-                        element: <AdminEditarPage />,
-                        loader: adminEditLoader,
-                        action: adminEditAction
+                        path: "agregar",
+                        element: <AdminAgregarArchivosPage />,
+                        action: adminAgregarArchivoAction,
                     },
                     {
-                        path: "destroy/:id",
-                        element: <AdminDestroyPage />,
-                        action: destroyAction,
+                        path: "modificar",
+                        element: <Outlet />,
+                        children: [
+                            {
+                                index: true,
+                                element: <AdminModificarArchivosPage />,
+                                loader: adminModificarArchivoLoader
+                            },
+                            {
+                                path: "editar/:id",
+                                element: <AdminEditarArchivosPage />,
+                                loader: adminEditArchivoLoader,
+                                action: adminEditArchivoAction
+                            },
+                            {
+                                path: "destroy/:id",
+                                element: <AdminDestroyArchivosPage />,
+                                action: destroyArchivoAction,
+                            }
+                        ],
                     }
-                ],
+                ]
+            },
+            // Admin: Imagenes
+            {
+                path: "imagenes",
+                children: [
+                    {
+                        path: "editar",
+                        element: <AdminEditarImagenesPage />
+                    }
+                ]
             }
         ]
     },
