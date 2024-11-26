@@ -32,7 +32,11 @@ import AdminModificarArchivosPage, {loader as adminModificarArchivoLoader} from 
 import AdminEditarArchivosPage, { loader as adminEditArchivoLoader, action as adminEditArchivoAction } from '@/pages/admin/archivos/ModificarPage/EditarPage';
 import AdminDestroyArchivosPage, { action as destroyArchivoAction } from '@/pages/admin/archivos/ModificarPage/DestroyPage/DestroyPage';
 // Pages: Admin/Imagenes
-import AdminEditarImagenesPage from '@/pages/admin/imagenes/EditarPage';
+import AdminIndexImagenesPage from '@/pages/admin/imagenes';
+import AdminAgregarImagenesPage from '@/pages/admin/imagenes/AgregarPage';
+import AdminModificarImagenesPage, {loader as AdminModificarImagenesLoader} from '@/pages/admin/imagenes/ModificarPage';
+import AdminEditarImagenesPage, {loader as adminEditImagenLoader, action as adminEditImagenAction} from '@/pages/admin/imagenes/ModificarPage/EditarPage';
+import AdminDestroyImagenesPage, {action as adminDestroyImagenAction} from '@/pages/admin/imagenes/ModificarPage/DestroyPage/DestroyPage';
 
 // Crear enrutador
 const router = createBrowserRouter([
@@ -118,8 +122,34 @@ const router = createBrowserRouter([
                 path: "imagenes",
                 children: [
                     {
-                        path: "editar",
-                        element: <AdminEditarImagenesPage />
+                        index: true,
+                        element: <AdminIndexImagenesPage />
+                    },
+                    {
+                        path: "agregar",
+                        element: <AdminAgregarImagenesPage />
+                    },
+                    {
+                        path: "modificar",
+                        element: <Outlet />,
+                        children: [
+                            {
+                                index: true,
+                                element: <AdminModificarImagenesPage />,
+                                loader: AdminModificarImagenesLoader
+                            },
+                            {
+                                path: "editar/:id",
+                                element: <AdminEditarImagenesPage />,
+                                action: adminEditImagenAction,
+                                loader: adminEditImagenLoader
+                            },
+                            {
+                                path: "destroy/:id",
+                                element: <AdminDestroyImagenesPage />,
+                                action: <adminDestroyImagenAction />
+                            }
+                        ]
                     }
                 ]
             }

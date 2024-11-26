@@ -1,0 +1,59 @@
+.contenedorAnadir {
+    width: 75vw;
+    background-color: rgb(218, 218, 218);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.anadir {
+    width: 70%;
+    background-color: var(--background);
+}
+
+.anadirTitulo {
+    background-color: var(--text);
+    color: var(--background);
+    padding: 15px 20px;
+}
+
+.anadirInputs {
+    padding: 40px;
+}
+
+.anadirInputs input {
+    width: 60%;
+    font-size: 17px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.anadirInputs label {
+    width: 60%;
+    font-size: 20px;
+}
+
+.anadirInputs textarea {
+    width: 60%;
+    font-size: 17px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    resize: none;
+}
+
+.anadirInputs button {
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .contenedorAnadir {
+        width: 100vw;
+    }
+
+    .anadir {
+        width: 90%;
+    }
+}

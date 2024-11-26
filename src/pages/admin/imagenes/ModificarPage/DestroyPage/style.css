@@ -1,0 +1,72 @@
+.DestroySection {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 700px) {
+    .DestroySection {
+        height: 100%;
+    }
+}
+
+.alerta {
+    text-align: center;
+    padding: 40px;
+    font-weight: bolder;
+}
+
+.alerta header {
+    background-color: var(--color-primario-oscuro);
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 1.6em;
+}
+
+.alerta section {
+    background-color: var(--color-primario-claro);
+    padding: 30px 20px;
+    font-style: italic;
+}
+
+.alerta .contenedor-botones {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.alerta .btn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin: 0 25px;
+    font-size: 1.4em;
+    padding: 10px 20px;
+    font-weight: bolder;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color .4s, color .4s;
+    margin-bottom: 5px;
+}
+
+.alerta .btn-danger {
+    background-color: #d40;
+    color: #000;
+}
+
+.alerta .btn-danger:hover {
+    background-color: rgb(238, 192, 66);
+    color: #fff;
+}
+
+.alerta .btn-dark {
+    background-color: var(--color-primario-oscuro);
+    color: #fff;
+}
+
+.alerta .btn-dark:hover {
+    background-color: #fff;
+    color: var(--color-primario-oscuro);
+}
