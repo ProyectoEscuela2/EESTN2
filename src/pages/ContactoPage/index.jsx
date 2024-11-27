@@ -10,6 +10,7 @@ import { FaFacebook } from "react-icons/fa";
 import Map from '@/components/mapa/mapa';
 // Estilos
 import './style.css';
+import { useForm, ValidationError } from '@formspree/react';
 
 /* ¿OBSOLETO?:
 const InformacionDeContacto = () => {
@@ -43,27 +44,54 @@ const InformacionDeContacto = () => {
 };
 */
 
+// manejado con formspree.io
+//correo: gdadtecnica2@gmail.com
+// contraseña: dWu2KB#&J5
 export function FormMail(){
+    const [state, handleSubmit] = useForm("xovqkkpl");
+    if (state.succeeded) {
+        return <p>¡Muchas Gracias por su mensaje!</p>;
+    }
     return(
         <>
         <h1>Enviános un Correo</h1>
-        {/* <form id="#" className="#" method="post" role="form" action="./enviarCorreo.php">
+        <br />
+        <h1><a className='contacto-texto' href="mailto:gdadtecnica2@gmail.com" target="_blank" rel="noopener noreferrer">
+                        gdadtecnica2@gmail.com
+                        <span className="email-estatico"><SiGmail /></span>
+                    </a></h1>
+                    <br />
+
+        <form onSubmit={handleSubmit}>
+        <label htmlFor="email">Correo Electrónico</label>
+        <input type="email" placeholder="" className="" name="email" id="email" required />
+      <ValidationError 
+        prefix="Email" 
+        field="email"
+        errors={state.errors}
+      />
+      <label htmlFor="mensaje">Mensaje</label>
+      <textarea rows="6" placeholder="" className="" name="mensaje"id="mensaje" required></textarea>
+      <ValidationError 
+        prefix="Mensaje" 
+        field="mensaje"
+        errors={state.errors}
+      />
+      <button type="submit" disabled={state.submitting}>
+        Enviar
+      </button>
+    </form>
+
+        {/* <form id="#" className="#" method="post" role="form">
             <label htmlFor="nombre">Nombre</label>
             <input type="text" placeholder="" className="" name="nombre" id="nombre" required />
-            <label htmlFor="email">Correo Electrónico</label>
-            <input type="email" placeholder="" className="" name="email" id="email" required />
+            
             <label htmlFor="asunto">Asunto</label>
             <input type="text" placeholder="" className="" name="asunto" id="asunto" required />
-            <label htmlFor="mensaje">Mensaje</label>
-            <textarea rows="6" placeholder="" className="" name="mensaje"id="mensaje" required></textarea>    
+                
             <input type="submit" id="" className="btn" value="Enviar Correo" />
         </form>  */}
 
-
-                    <a className='contacto-texto' href="mailto:gdadtecnica2@gmail.com" target="_blank" rel="noopener noreferrer">
-                        gdadtecnica2@gmail.com
-                        <span className="email-estatico"><SiGmail /></span>
-                    </a>
         </>
     )
 }
