@@ -47,7 +47,7 @@ export function FormMail(){
     return(
         <>
         <h1>Enviános un Correo</h1>
-        {/* <form id="#" className="#" method="#" role="form">
+        <form id="#" className="#" method="post" role="form" action="enviarCorreo.php">
             <label htmlFor="nombre">Nombre</label>
             <input type="text" placeholder="" className="" name="nombre" id="nombre" required />
             <label htmlFor="email">Correo Electrónico</label>
@@ -57,7 +57,8 @@ export function FormMail(){
             <label htmlFor="mensaje">Mensaje</label>
             <textarea rows="6" placeholder="" className="" name="mensaje"id="mensaje" required></textarea>    
             <input type="submit" id="" className="btn" value="Enviar Correo" />
-        </form> */}
+        </form> 
+
 
                     <a className='contacto-texto' href="mailto:gdadtecnica2@gmail.com" target="_blank" rel="noopener noreferrer">
                         gdadtecnica2@gmail.com
