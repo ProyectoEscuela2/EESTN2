@@ -47,7 +47,7 @@ export function FormMail(){
     return(
         <>
         <h1>Enviános un Correo</h1>
-        <form id="#" className="#" method="post" role="form" action="enviarCorreo.php">
+        <form id="#" className="#" method="post" role="form" action="./enviarCorreo.php">
             <label htmlFor="nombre">Nombre</label>
             <input type="text" placeholder="" className="" name="nombre" id="nombre" required />
             <label htmlFor="email">Correo Electrónico</label>
