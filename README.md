@@ -26,6 +26,7 @@ Posteriormente abrir en el navegador: http://localhost:5173
 
 ### Otros enlaces:
 - [Documentacion oficial de React](https://es.react.dev/learn)
+- [Documentacion oficial de React Router](https://https://reactrouter.com/home)
 
 ### Mira nuestros perfiles de Github: 
 ### Grupo 2024(Fundador):

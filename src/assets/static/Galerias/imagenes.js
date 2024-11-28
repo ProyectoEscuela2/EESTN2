@@ -1,3 +1,11 @@
+/*
+Nota[4.100]: Como verás, nos manejamos mucho con archivos estáticos para renderizar contenido en las páginas. Lo que hacemos es exportar arrays con mucha información y en los componentes de React los renderizamos con listas.map(función).
+
+Lo hacemos así por una cuestión de orden. Para no tener toda la información en los componentes, creamos estos archivos. Así, cuando tengamos que actualizar la información, podamos acceder fácilmente a la información desde aquí, que la información está centralizada, y podamos cambiar rápidamente la información. Es una manera más flexible.
+
+Por eso en varios componentes verás el uso de renderizado de listas, para saber cuales son los archivos, fijate en los imports y en los estados a qué archivos se está llamando para conocer que es lo que estás usando.
+*/
+
 export const IMAGENES = [
     // ATENCIÓN: DISCONTINUIDAD EN LOS ID. 
     // Para Instalaciones Empiezan en 52 y para Informática empiezan en 0

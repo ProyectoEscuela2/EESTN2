@@ -1,3 +1,20 @@
+/*
+Nota[4.1]: Como somos de Info, arrancamos en info. X_ESPECIALIDAD_DATA es un objeto. Un objeto tiene la siguiente estructura:
+    
+    const objeto = { // Muy importante que abra y cierre con llaves.
+        propiedad: 'valor', // propiedad = "propiedad". 'valor': "string", 1, true, null
+    }
+
+Por lo cual, dentro de INFO_DATA, al igual que en los objetos de las demás especialidades, definiremos las siguientes propiedades:
+    - videoURL. URL de un video de YouTube. Este video explica la especialidad.
+    - titulo. Nombre de la especialidad.
+    - acercaDeEspecialidad. Es un array [item1, item2]. Aquí va justamente la descripción sobre la especialidad, y si quiere que haya más de un párrafo y no esté todo en un mismo párrafo, se divide en elementos. Ej: ["paragraph1", "paragraph2" ..., "paragraphx"]
+    - diseñoCurricularSRC. Enlace del archivo del diseño curricular que se encuentra alojado en Google Drive.
+    - practicasInfo. Es un array [item1, item2] en el cual, cada item es un objeto con una única propiedad: "id". Este "id" es una referencia a otro archivo que contiene todas las empresas donde se pueden hacer prácticas profesionalizantes. Para ir a él busca la Nota[4.2] o ve al archivo "./empresas.js"
+
+Eso es lo que te encontrarás aquí y en los demás archivos de la misma naturaleza que este. No hay mucho más para ver aquí. Una vez que haya visto la Nota[4.2], vuelve al archivo index.jsx que se encuentra en la carpeta EspecialidadesPage, dentro de la carpeta pages, o busca Nota[1.5]
+*/
+
 export const INFO_DATA = {
     "videoURL": "https://www.youtube.com/embed/dnPapnTgtsc",
     "titulo":"Informática",
@@ -7,6 +24,7 @@ export const INFO_DATA = {
     "diseñoCurricularSRC": "https://drive.google.com/file/d/1gkqZyE4hsy-GKvTUoPtLF8hfhOeYQa7Y/view",
     "practicasInfo": [
         {
+            // Nota[4.1.1] Aquí es donde están los "id"s. Ve arriba de todo, a la Nota[4.1] para comprender que es esto.
             "id": 0
         },
         {
